@@ -1,0 +1,62 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# news
+news_index:
+  url:   /news.xhtml
+  param: { module: content, action: news }
+news_show:
+  url:   /news/:id.xhtml
+  param: { module: content, action: newsShow }
+  
+# product
+product_index:
+  url:   /products.xhtml
+  param: { module: content, action: products }
+product_show:
+  url:   /product/:id.xhtml
+  param: { module: content, action: productShow }
+  
+# service
+service_index:
+  url:   /service.xhtml
+  param: { module: content, action: service }
+service_show:
+  url:   /service/:id.xhtml
+  param: { module: content, action: serviceShow }
+  
+# page
+gypsum:
+  url:   /gypsum.xhtml
+  param: { module: main, action: gypsum }
+  
+page:
+  url:   /p/:menu.xhtml
+  param: { module: page, action: show }
+
+contact:
+  url:   /contact.xhtml
+  param: { module: main, action: contact }
+  
+about:
+  url:   /aboutus.xhtml
+  param: { module: main, action: about }
+  
+culture:
+  url:   /c/:l.xhtml
+  param: { module: main, action: culture }
+  
+
+# default rules
+homepage:
+  url:   /
+  param: { module: main, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

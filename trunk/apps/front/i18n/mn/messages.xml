@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="mn" datatype="plaintext" original="messages" date="2011-05-28T11:24:57Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Construction equipments trade, rent and leasing</source>
+        <target>Барилгын тоног төхөөрөмжийн худалдаа түрээс лийзинг</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Home</source>
+        <target>Нүүр</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About Us</source>
+        <target>Бидний тухай</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Products</source>
+        <target>Бүтээгдэхүүн</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Product</source>
+        <target>Бүтээгдэхүүн</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Service</source>
+        <target>Үйлчилгээ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact</source>
+        <target>Холбоо барих</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Featured news</source>
+        <target>Онцлох мэдээ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>News</source>
+        <target>Мэдээ мэдээлэл</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Fax</source>
+        <target>Факс</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Website</source>
+        <target>Вэбсайт</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Email</source>
+        <target>Имэйл</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Phone</source>
+        <target>Утас</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Address</source>
+        <target>Хаяг</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Location</source>
+        <target>Хаяг, байршил</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Image gallery</source>
+        <target>Зургийн цомог</target>
+      </trans-unit>
+      <trans-unit>
+        <source>More</source>
+        <target>Дэлгэрэнгүй</target>
+      </trans-unit>
+      <trans-unit>
+        <source>No products in this category.</source>
+        <target>Энэ ангилалд бүтээгдэхүүн оруулаагүй байна.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Vote</source>
+        <target>Санал өгөх</target>
+      </trans-unit>
+      <trans-unit>
+        <source>All news</source>
+        <target>Бүх мэдээ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Poll</source>
+        <target>Санал асуулга</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ALL</source>
+        <target>БҮГД</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your name</source>
+        <target>Таны нэр</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Organization</source>
+        <target>Байгууллагын нэр</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Message</source>
+        <target>Зурвас</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Book a product</source>
+        <target>Бүтээгдэхүүн захиалга</target>
+      </trans-unit>
+      <trans-unit>
+        <source>SEND</source>
+        <target>ИЛГЭЭХ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact us</source>
+        <target>Холбоо барих</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Enter your comment.</source>
+        <target>Cэтгэгдлээ оруулна уу.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>COMMENTS</source>
+        <target>СЭТГЭГДЛҮҮД</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Leave a comment</source>
+        <target>Сэтгэгдэл үлдээх</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Error occured. Please try again later.</source>
+        <target>Алдаа гарлаа. Та хэсэг хугацааны дараа сэтгэгдлээ үлдээгээрэй.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Duplicated comment.</source>
+        <target>Таны сэтгэгдэл өмнө нь орсон байна.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>LEAVE A COMMENT</source>
+        <target>СЭТГЭГДЭЛ ҮЛДЭЭХ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Guest</source>
+        <target>Зочин</target>
+      </trans-unit>
+      <trans-unit>
+        <source>back to news list</source>
+        <target>мэдээний жагсаалтруу буцах</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About Company</source>
+        <target>Бидний тухай</target>
+      </trans-unit>
+      <trans-unit>
+        <source>LAST COMMENTS</source>
+        <target>Сүүлийн сэтгэгдлүүд</target>
+      </trans-unit>      
+      
+      <trans-unit>
+        <source>Ulaanbaatar city</source>
+        <target>Улаанбаатар хот</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Mongolia</source>
+        <target>Монгол улс</target>
+      </trans-unit>
+      <trans-unit>
+        <source>BOOKING</source>
+        <target>БҮТЭЭГДХҮҮН ЗАХИАЛГА</target>
+      </trans-unit>
+      <trans-unit>
+        <source>WATCH THE MOVIE</source>
+        <target>ТАНИЛЦУУЛГА ВИДЕО ҮЗЭХ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>TECHNICAL INFO</source>
+        <target>ТЕХНИКИЙН ҮЗҮҮЛЭЛТ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Name</source>
+        <target>Нэр</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cod</source>
+        <target>Код</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Rent</source>
+        <target>Түрээс</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sort by</source>
+        <target>Эрэмбэлэх</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Gypsum board</source>
+        <target>Гипсэн хавтан</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Join us</source>
+        <target>Бидэнтэй нэгдэх</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Position</source>
+        <target>Албан тушаал</target>
+      </trans-unit>
+      <trans-unit>
+        <source>fields are mandatory</source>
+        <target>талбарыг заавал бөглөнө</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Send an invoice</source>
+        <target>Үнийн санал авах</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Email successfully sent.</source>
+        <target>Таны зурвасыг амжилттай илгээлээ.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

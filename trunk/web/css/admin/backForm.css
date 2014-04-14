@@ -1,0 +1,42 @@
+form{	padding:0px;	margin:0px;}
+fieldset {	display:block;	padding:15px 5px;	line-height:20px;	margin-bottom:20px;}
+legend {	font-size:12px;	font-weight:bold;	padding:3px 10px;}
+label {  display:block;	/* clear:left;	float:left; */	width:100px;	text-align:right;	padding-right:10px;	margin-bottom:5px;	font-weight:bold;}
+
+label.clean {display:block;width:250px;text-align:left;}
+
+
+input{padding:2px;margin-bottom:1px;height:20px;width:300px;}
+input[type=submit], input[type=button] {cursor:pointer;font-weight:bold;padding:3px 10px;height:26px;line-height:20px;width:80px;}
+input[type=checkbox]{padding:0;height:18px;line-height:18px;width:18px;margin:-2px 0 0 0;float:left;}
+
+select{padding:3px;margin-bottom:1px;height:26px;width:306px;}
+textarea {padding:2px;margin-bottom:2px;width:500px;height:100px;overflow:auto;}
+option {background:#FFF;}
+optgroup option {}
+ 
+
+
+.button, .buttonSmall, .buttonBig {
+	cursor:pointer;
+	font-weight:bold;
+	margin-left:5px;
+	padding:3px 10px;
+}
+
+.buttonSmall {
+  padding:1px 10px;
+}
+
+.buttonBig {
+  padding:10px 20px;
+}
+
+ul.error_list, ul.radio_list {list-style-type:none;}
+ul.error_list li, ul.radio_list li {color:red; font-size:10px; font-weight:normal;}
+ul.checkbox_list {list-style:none;border:1px dotted gray;width:215px;padding:3px;}
+ul.checkbox_list li label {margin:-22px 0 0 16px;text-align:left;}
+
+input.stext{width:200px;}
+input.stext.enabled{border:1px solid #C7D4E7;background:#F4F6FF;width:200px;}
+input.stext.disabled{border:1px solid #bbb;background:#efefef;width:200px;}
