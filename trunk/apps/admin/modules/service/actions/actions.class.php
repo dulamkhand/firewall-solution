@@ -55,7 +55,7 @@ class serviceActions extends sfActions
         $this->forward404Unless($service = Doctrine::getTable('Service')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $service->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
         $this->redirect($request->getReferer() ? $request->getReferer() : 'service/index');
@@ -67,7 +67,7 @@ class serviceActions extends sfActions
         if ($form->isValid())
         {
           $service = $form->save();
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
           $this->redirect($request->getReferer() ? $request->getReferer() : 'service/index');
         }
     }

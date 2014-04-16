@@ -56,7 +56,7 @@
 
 <div style="position:fixed;right:0;top:162px;">
     <a href="ymsgr:sendim?<?php echo sfConfig::get('app_yahoo')?>" border="0">
-        <?php echo image_tag('http://opi.yahoo.com/online?u=simpedilmongolia&t=9', array('width'=>45))?>
+        <?php echo image_tag('http://opi.yahoo.com/online?u=firewallsolution&t=9', array('width'=>45))?>
     </a>
 </div>
 

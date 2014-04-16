@@ -5,7 +5,8 @@
     <div class="left" style="width:400px;">
         <?php include_partial('content/productImage', array('p'=>$p));?>
         
-        <?php include_partial('content/productBody', array('p'=>$p));?>
+        <br clear="all">
+        <?php if($p->getVideo()) echo html_entity_decode($p->getVideo())?>
     </div><!--left-->
         
     <div class="left" style="width:320px;margin:0 0 10px 10px;">
@@ -13,13 +14,9 @@
         		<?php include_partial('content/productSpec', array('p'=>$p));?>
         </div>        
         
-    		<?php include_partial('content/order', array('form'=>$form, 'product'=>$p));?>
+    		<?php include_partial('content/order', array('form'=>$form, 'product'=>$p, 'act'=>'product'));?>
         
-        <br clear="all">
-        <?php if($p->getVideo()):?>
-            <iframe style="margin:0 0 10px 0;" width="320" height="235" src="<?php echo $p->getVideo()?>" frameborder="0" allowfullscreen></iframe>
-        <?php endif?>
-        
+        <?php include_partial('content/productBody', array('p'=>$p));?>
     </div><!-- right-->
     
     <br clear="all">

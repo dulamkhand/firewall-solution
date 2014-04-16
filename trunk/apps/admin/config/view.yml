@@ -6,9 +6,9 @@ default:
     content-type: text/html
 
   metas:
-    title:        SIMPEDIL MONGOLIA | ADMIN PANEL
-    description:  simpedil
-    keywords:     simpedil
+    title:        FIREWALL SOLUTION | ADMIN PANEL
+    description:  firewall solution
+    keywords:     firewall solution
     language:     en
     robots:       index, follow
 

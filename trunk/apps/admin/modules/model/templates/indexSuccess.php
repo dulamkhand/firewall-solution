@@ -4,28 +4,33 @@
 <br clear="all">
 <br clear="all">
 
-<table width="50%">
+<table width="100%">
   <thead>
     <tr>
       <th>№</th>
       <th>Модел</th>
-      <th nowrap>Огноо</th>
-      <th>#</th>
+      <th>Model</th>
+      <th>Дэс дараалал</th>
+      <th>Үүсгэсэн</th>
+      <th>Засварласан</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <?php $i=0; foreach ($pager->getResults() as $model): ?>
-    <?php $id = $model->getId()?>
     <tr>
       <td><?php echo ++$i?></td>
-      <td><?php echo $model->getName().' / '.$model->getNameEn()?></td>
-      <td nowrap>
-          <b>Үүсгэсэн: </b><?php echo $model->getCreatedAt() ?><br>
-          <b>Засварласан: </b><?php echo $model->getUpdatedAt() ?><br>
-          <b>Дэс дараалал: </b><?php echo $model->getSort() ?>
+      <td width="30%">
+					<a href="<?php echo url_for('model/edit?id='.$model->getId()) ?>"><?php echo $model->getName()?></a>
       </td>
+      <td width="30%">
+					<a href="<?php echo url_for('model/edit?id='.$model->getId()) ?>"><?php echo $model->getNameEn()?></a>
+      </td>
+      <td width="10%"><?php echo $model->getSort() ?></td>
+      <td><?php echo $model->getCreatedAt() ?></td>
+      <td><?php echo $model->getUpdatedAt() ?></td>
       <td nowrap>
-          <?php include_partial('partial/editDelete', array('module'=>'product', 'id'=>$id));?>
+          <?php include_partial('partial/editDelete', array('module'=>'model', 'id'=>$model->getId()));?>
       </td>
     </tr>
     <?php endforeach; ?>

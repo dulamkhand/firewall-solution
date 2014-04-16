@@ -21,7 +21,7 @@
   <div>
     <ul id="treemenu2" class="treeview">      
 	      <?php 
-	      $cats = GlobalTable::doExecute('ProductCategory', array('parentId'=>'0', 'orderBy'=>'sort DESC, name ASC'));
+	      $cats = GlobalTable::doExecute('ProductCategory', array('parentId'=>'0', 'orderBy'=>'sort DESC, name ASC, name_en ASC'));
 	      foreach ($cats as $cat) {
 	          listChildNodes($cat, $sf_params);
 	      }?>

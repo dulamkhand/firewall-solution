@@ -5,7 +5,7 @@ class myUser extends sfBasicSecurityUser
     public function signIn($admin)
     {
       $this->setAuthenticated(true);
-      $this->addCredential('admin-simpedil');
+      $this->addCredential('admin-firewall');
       
       $this->setAttribute('user_id', $admin->getId());
       $this->setAttribute('email', $admin->getEmail());

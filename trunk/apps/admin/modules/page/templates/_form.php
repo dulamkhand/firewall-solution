@@ -16,20 +16,6 @@
   <tbody>
     <?php echo $form->renderGlobalErrors() ?>
     <tr>
-      <th><?php echo $form['type']->renderLabel() ?></th>
-      <td>
-        <?php echo $form['type']->renderError() ?>
-        <?php echo $form['type'] ?>
-      </td>
-    </tr>
-    <tr>
-      <th><?php echo $form['image']->renderLabel() ?></th>
-      <td>
-        <?php echo $form['image']->renderError() ?>
-        <?php echo $form['image'] ?>
-      </td>
-    </tr>
-    <tr>
       <th><?php echo $form['title']->renderLabel() ?></th>
       <td>
         <?php echo $form['title']->renderError() ?>
@@ -41,6 +27,13 @@
       <td>
         <?php echo $form['title_en']->renderError() ?>
         <?php echo $form['title_en'] ?>
+      </td>
+    </tr>
+    <tr>
+      <th><?php echo $form['image']->renderLabel() ?></th>
+      <td>
+        <?php echo $form['image']->renderError() ?>
+        <?php echo $form['image'] ?>
       </td>
     </tr>
     <tr>

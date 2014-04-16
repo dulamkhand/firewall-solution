@@ -29,9 +29,12 @@ class PageTable extends Doctrine_Table
           ->from('Page')
           ->orderBy('created_at DESC');
 
+          if(isset($params['type']) && $params['type'])
+              $q->andWhere('type = ?', array($params['type']));
+
           // KEYWORD
           if(isset($params['keyword']) && $params['keyword'])
-            $q->andWhere('title LIKE ? OR content LIKE ?', array('%'.$params['keyword'].'%', '%'.$params['keyword'].'%'));
+              $q->andWhere('title LIKE ? OR content LIKE ?', array('%'.$params['keyword'].'%', '%'.$params['keyword'].'%'));
 
           // LIMIT
           $limit = isset($params['limit']) ? $params['limit'] : 100;

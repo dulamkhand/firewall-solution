@@ -14,6 +14,7 @@ class specActions extends sfActions
 	{
 		$params = array();
 		if($request->getParameter('s')) $params['specKeyword'] = $request->getParameter('s');
+		$params['orderBy'] = 'sort DESC, name ASC, name_en ASC';
 		$this->pager = GlobalTable::getPager('Spec', $params);
 	}
 
@@ -55,7 +56,7 @@ class specActions extends sfActions
 		$this->forward404Unless($spec = Doctrine_Core::getTable('Spec')->find(array($request->getParameter('id'))), sprintf('Object spec does not exist (%s).', $request->getParameter('id')));
 		$spec->delete();
 
-		$this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+		$this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
 
 		$this->redirect('spec/index');
 	}
@@ -69,7 +70,7 @@ class specActions extends sfActions
 
 			//GlobalLib::createThumbs($spec->getFilename(), 'b', array(780), false);
 
-			$this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+			$this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
 			$this->redirect('spec/index');
 		}
 	}

@@ -15,11 +15,10 @@ class productActions extends sfActions
     {
     		$params = array();
 				if($request->getParameter('s')) $params['productKeyword'] = $request->getParameter('s');
+				if($request->getParameter('categoryId')) $params['categoryId'] = $request->getParameter('categoryId');
+				$params['orderBy'] = 'sort DESC, title ASC, title_en ASC, code ASC';
 				$this->pager = GlobalTable::getPager('Product', $params);
     }
-    
-    
-    
     
     
     public function executeIsActive(sfWebRequest $request)
@@ -28,7 +27,7 @@ class productActions extends sfActions
         $this->forward404Unless(in_array($cmd = $request->getParameter('cmd'), array(0,1)));
         $content->setIsActive($cmd);
         $content->save();
-        $this->getUser()->setFlash('flash', 'Successfully saved.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
         $this->redirect($request->getReferer() ? $request->getReferer() : 'content/index');
     }
     
@@ -38,7 +37,7 @@ class productActions extends sfActions
         $this->forward404Unless(in_array($cmd = $request->getParameter('cmd'), array(0,1)));
         $content->setIsFeatured($cmd);
         $content->save();
-        $this->getUser()->setFlash('flash', 'Successfully saved.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
         $this->redirect($request->getReferer() ? $request->getReferer() : 'content/index');
     }
     
@@ -86,9 +85,18 @@ class productActions extends sfActions
         $this->forward404Unless($product = Doctrine::getTable('Product')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $product->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
+        $this->redirect($request->getReferer() ? $request->getReferer() : 'product/index');
+    }
+    
+    public function executeDeletePdf(sfWebRequest $request)
+    {
+        $this->forward404Unless($product = Doctrine::getTable('Product')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
+        $product->setPdf("");
+        $product->save();
+        $this->getUser()->setFlash('flash', 'PDF файлыг амжилттай хаслаа.', true);
         $this->redirect($request->getReferer() ? $request->getReferer() : 'product/index');
     }
     
@@ -96,15 +104,22 @@ class productActions extends sfActions
     public function executeDeleteImage(sfWebRequest $request)
     {
         $this->forward404Unless($product = Doctrine::getTable('Product')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
-        
-        switch ($request->getParameter('p')) {
-        	case 1: $product->setImage(""); break;
-        	default: break;
+        if($request->getParameter('i')) {
+            switch ($request->getParameter('i')) {
+            	case 10: $product->setImage(""); break;
+            	case 1: $product->setImage1(""); break;
+            	case 2: $product->setImage2(""); break;
+            	case 3: $product->setImage3(""); break;
+            	case 4: $product->setImage4(""); break;
+            	case 5: $product->setImage5(""); break;
+            	case 6: $product->setImage6(""); break;
+            	case 7: $product->setImage7(""); break;
+            	case 8: $product->setImage8(""); break;
+            	default: break;
+            }
+            $product->save();
+            $this->getUser()->setFlash('flash', 'Амжилттай хаслаа.', true);
         }
-        $product->save();        
-        
-        $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
-        
         $this->redirect($request->getReferer() ? $request->getReferer() : 'product/index');
     }
   
@@ -137,7 +152,7 @@ class productActions extends sfActions
         	if($product->getImage8() && !file_exists(sfConfig::get('sf_upload_dir').'/p/t162-'.$product->getImage8()))
 		          GlobalLib::createThumbs($product->getImage8(), 'p', array(162), false);
           
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
           $this->redirect($request->getReferer() ? $request->getReferer() : 'product/index');
         }
     }

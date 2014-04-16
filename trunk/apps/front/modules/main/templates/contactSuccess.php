@@ -58,7 +58,7 @@
   		mapZoom: 12,
   		mapCenter:[<?php echo sfConfig::get('app_lat')?>, <?php echo sfConfig::get('app_lng')?>],
   		markers:{"data":[{
-  				"lat":<?php echo sfConfig::get('app_lat')?>,"lng":<?php echo sfConfig::get('app_lng')?>,"title":"SIMPEDIL MONGOLIA","body":""
+  				"lat":<?php echo sfConfig::get('app_lat')?>,"lng":<?php echo sfConfig::get('app_lng')?>,"title":"FIREWALL SOLUTION","body":""
 			}]}
   	});
   });

@@ -16,7 +16,7 @@
       <td colspan="2">
         <?php echo $form->renderHiddenFields(false) ?>
         <input type="submit" value="Хадгалах"/>
-        &nbsp;<a href="<?php echo url_for('product/index') ?>">Жагсаалтруу буцах</a>
+        &nbsp;<a href="<?php echo url_for('product/index?categoryId='.$o->getId()) ?>">Жагсаалтруу буцах</a>
       </td>
     </tr>
   </tfoot>
@@ -31,10 +31,10 @@
 	      <td colspan="2">
 	        <?php echo $form['category_id']->renderError(); ?>
 	        <select name="product[category_id]">
-	        			<?php $cats = GlobalTable::doFetchArray('ProductCategory', array('parentId'=>'0'))?>	
+	        			<?php $cats = GlobalTable::doFetchArray('ProductCategory', array('parentId'=>'0', 'orderBy'=>'sort DESC, name ASC, name_en ASC'))?>	
 	        			<?php foreach ($cats as $cat):?>	
 	        					<optgroup label="<?php echo $cat['name']?>" style="padding:2px;">
-					        			<?php $subcats = GlobalTable::doFetchArray('ProductCategory', array('parentId'=>$cat['id']))?>	
+					        			<?php $subcats = GlobalTable::doFetchArray('ProductCategory', array('parentId'=>$cat['id'], 'orderBy'=>'sort DESC, name ASC, name_en ASC'))?>	
 			        					<?php foreach ($subcats as $subcat):?>
 		      									<option value="<?php echo $subcat['id']?>" <?php if($o->getCategoryId() == $subcat['id']) echo 'selected'?> style="padding:2px 2px 2px 20px;">
 		      											<?php echo $subcat['name']?>
@@ -86,6 +86,7 @@
           <b>Түрээсийн үнэ</b>
       		<?php echo $form['rental_cost']->renderError() ?>
           <?php echo $form['rental_cost'] ?>
+          <?php echo $form['rental_cost']->renderHelp() ?>
         </td>
       </tr>
   </table>
@@ -101,7 +102,7 @@
       <td width="200">
       	<?php if($o->getImage()) {
       	  echo image_tag('/u/p/t162-'.$o->getImage(), array()).'<br>';
-      	  echo link_to('[устгах]', 'product/deleteImage?i=0&id='.$o->getId(), array('target'=>'_blank'));
+      	  echo link_to('[устгах]', 'product/deleteImage?i=10&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image']->renderError() ?>
         <?php echo $form['image'] ?><br>
@@ -110,7 +111,7 @@
       <td width="200">
       	<?php if($o->getImage1()) {
       	  echo image_tag('/u/p/t162-'.$o->getImage1(), array()).'<br>';
-      	  echo link_to('[устгах]', 'product/deleteImage?i=13&id='.$o->getId(), array('target'=>'_blank'));
+      	  echo link_to('[устгах]', 'product/deleteImage?i=1&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image1']->renderError() ?>
         <?php echo $form['image1'] ?>
@@ -118,7 +119,7 @@
       <td width="200">
       	<?php if($o->getImage2()) {
       	  echo image_tag('/u/p/t162-'.$o->getImage2(), array()).'<br>';
-      	  echo link_to('[устгах]', 'product/deleteImage?i=2&id='.$o->getId(), array('target'=>'_blank'));
+      	  echo link_to('[устгах]', 'product/deleteImage?i=2&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image2']->renderError() ?>
         <?php echo $form['image2'] ?>
@@ -126,7 +127,7 @@
       <td width="200">
     		<?php if($o->getImage3()) {
     		  echo image_tag('/u/p/t162-'.$o->getImage3(), array()).'<br>';
-    		  echo link_to('[устгах]', 'product/deleteImage?i=3&id='.$o->getId(), array('target'=>'_blank'));
+    		  echo link_to('[устгах]', 'product/deleteImage?i=3&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image3']->renderError() ?>
         <?php echo $form['image3'] ?>
@@ -135,36 +136,36 @@
     <tr><td colspan="4"><a onclick='$(".more-images").toggle();' style="cursor:pointer;text-decoration:underline;">Зураг нэмэх</a></td></tr>
     <tr>
     	<td width="200" style="display:none;" class="more-images">
-	      <?php if($o->getImage5()) {
-	        echo image_tag('/u/p/t162-'.$o->getImage5(), array()).'<br>';
-	        echo link_to('[устгах]', 'product/deleteImage?i=5&id='.$o->getId(), array('target'=>'_blank'));
+	      <?php if($o->getImage4()) {
+	        echo image_tag('/u/p/t162-'.$o->getImage4(), array()).'<br>';
+	        echo link_to('[устгах]', 'product/deleteImage?i=4&id='.$o->getId(), array());
+    		} ?>
+        <?php echo $form['image4']->renderError() ?>
+        <?php echo $form['image4'] ?>
+      </td>
+      <td width="200" style="display:none;" class="more-images">
+      	<?php if($o->getImage5()) {
+      	  echo image_tag('/u/p/t162-'.$o->getImage5(), array()).'<br>';
+      	  echo link_to('[устгах]', 'product/deleteImage?i=5&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image5']->renderError() ?>
         <?php echo $form['image5'] ?>
       </td>
       <td width="200" style="display:none;" class="more-images">
-      	<?php if($o->getImage6()) {
-      	  echo image_tag('/u/p/t162-'.$o->getImage6(), array()).'<br>';
-      	  echo link_to('[устгах]', 'product/deleteImage?i=6&id='.$o->getId(), array('target'=>'_blank'));
+	      <?php if($o->getImage6()) {
+	        echo image_tag('/u/p/t162-'.$o->getImage6(), array()).'<br>';
+	        echo link_to('[устгах]', 'product/deleteImage?i=6&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image6']->renderError() ?>
         <?php echo $form['image6'] ?>
       </td>
       <td width="200" style="display:none;" class="more-images">
-	      <?php if($o->getImage7()) {
-	        echo image_tag('/u/p/t162-'.$o->getImage7(), array()).'<br>';
-	        echo link_to('[устгах]', 'product/deleteImage?i=7&id='.$o->getId(), array('target'=>'_blank'));
+      	<?php if($o->getImage7()) {
+      	  echo image_tag('/u/p/t162-'.$o->getImage7(), array()).'<br>';
+      	  echo link_to('[устгах]', 'product/deleteImage?i=7&id='.$o->getId(), array());
     		} ?>
         <?php echo $form['image7']->renderError() ?>
         <?php echo $form['image7'] ?>
-      </td>
-      <td width="200" style="display:none;" class="more-images">
-      	<?php if($o->getImage8()) {
-      	  echo image_tag('/u/p/t162-'.$o->getImage8(), array()).'<br>';
-      	  echo link_to('[устгах]', 'product/deleteImage?i=8&id='.$o->getId(), array('target'=>'_blank'));
-    		} ?>
-        <?php echo $form['image8']->renderError() ?>
-        <?php echo $form['image8'] ?>
       </td>
     </tr>
 </table>
@@ -178,7 +179,7 @@
         <tr><td valign="top">
             <?php echo $form['pdf']->renderError() ?>
             <?php echo $form['pdf'] ?>
-            <div class="help" style="margin:3px 0 0 0;"><?php echo $form['pdf']->renderHelp() ?></div>
+            <?php echo $form['pdf']->renderHelp() ?>
         </td><td valign="top">
              <?php if($o->getPdf()):?>
                 <a href="<?php echo sfConfig::get('app_host').$o->getPdf()?>" target="_blank">
@@ -198,9 +199,9 @@
         <tr><td valign="top">
             <?php echo $form['video']->renderError() ?>
             <?php echo $form['video'] ?>
-            <div class="help" style="margin:3px 0 0 0;"><?php echo $form['video']->renderHelp() ?></div>
+            <?php echo $form['video']->renderHelp() ?>
         </td><td valign="top">
-        		<iframe width="320" height="235" src="<?php echo $o->getVideo()?>" frameborder="0" allowfullscreen></iframe>
+        		<?php echo image_tag('youtube-help.png', array('width'=>400)) ?>
         </td></tr>
     </table>
 </fieldset>
@@ -229,7 +230,7 @@
 		        <?php echo $form['keywords']->renderError() ?>
 		        <?php echo $form['keywords'] ?>
 		      </td>
-		    </tr>		    
+		    </tr>
     </table>
 </fieldset>
 
