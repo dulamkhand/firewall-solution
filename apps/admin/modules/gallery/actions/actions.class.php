@@ -56,7 +56,7 @@ class galleryActions extends sfActions
     $this->forward404Unless($gallery = Doctrine_Core::getTable('Image')->find(array($request->getParameter('id'))), sprintf('Object gallery does not exist (%s).', $request->getParameter('id')));
     $gallery->delete();
     
-    $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+    $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
 
     $this->redirect('gallery/index');
   }
@@ -71,7 +71,7 @@ class galleryActions extends sfActions
         
         GlobalLib::createThumbs($gallery->getFilename(), 'g', array(120), false);
         
-        $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
   
         $this->redirect('gallery/new');
     }

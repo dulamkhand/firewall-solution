@@ -2,6 +2,7 @@
   <thead>
     <tr>
       <th>№</th>
+      <th>Зураг</th>
       <th>Агуулга</th>
       <th>#</th>
     </tr>
@@ -11,11 +12,14 @@
     <tr>
       <td><?php echo ++$i?></td>
       <td>
+        <?php if($page->getImage()) echo image_tag('/u/page/t350-'.$page->getImage(), array('style'=>'max-width:300px;'))?>
+      </td>
+      <td>
         <b><?php echo $page ?></b><br>
-        <?php echo GlobalLib::utf8_substr(strip_tags($page->getContent()), 0, 200).' ...' ?>
+        <?php echo GlobalLib::clearOutput($page->getContent()) ?>
       </td>
       <td nowrap>
-          <?php include_partial('partial/editDelete', array('module'=>'page', 'id'=>$page->getId()))?>
+          <a href="<?php echo url_for('page/edit?id='.$page->getId())?>" title="Засварлах" class="action">Засварлах</a>
       </td>
     </tr>
     <?php endforeach; ?>

@@ -17,7 +17,7 @@
     <?php $i=0; foreach ($banners as $banner): ?>
     <tr>
       <td><?php echo ++$i?></td>
-      <td><a href="http://www.icon.mn/u/b/<?php echo $banner->getFilename()?>" target="_blank">
+      <td><a href="<?php echo sfConfig::get('app_host')?>u/b/<?php echo $banner->getFilename()?>" target="_blank">
             <?php echo image_tag('/u/b/'.$banner->getFilename(), array('style'=>'max-width:200px')); ?>
         </a></td>
       <td><?php echo $banner->getSort() ?></td>

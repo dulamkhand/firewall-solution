@@ -45,7 +45,7 @@
         <td>
           <?php echo $form['sort']->renderError() ?>
           <?php echo $form['sort'] ?>
-          <span class="help"><?php echo $form['sort']->renderHelp() ?></span>
+          <?php echo $form['sort']->renderHelp() ?>
         </td>
       </tr>
     </tbody>

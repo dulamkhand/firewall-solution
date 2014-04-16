@@ -6,9 +6,9 @@ default:
     content-type: text/html
 
   metas:
-    title:        SIMPEDIL MONGOLIA
-    description:  SIMPEDIL MONGOLIA
-    keywords:     SIMPEDIL MONGOLIA
+    title:        Firewall Solution
+    description:  Firewall Solution
+    keywords:     Firewall Solution
     language:     en
     robots:       index, follow
 

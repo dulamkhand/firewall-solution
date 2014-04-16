@@ -17,6 +17,7 @@ class modelActions extends sfActions
     		$params = array();
     		$params['productId'] = $productId;
 				if($request->getParameter('s')) $params['modelKeyword'] = $request->getParameter('s');
+				$params['orderBy'] = 'sort DESC, name ASC, name_en ASC';
 				$this->pager = GlobalTable::getPager('ProductModel', $params);
     }
   
@@ -60,7 +61,7 @@ class modelActions extends sfActions
         $this->forward404Unless($model = Doctrine::getTable('ProductModel')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $model->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
         $this->redirect($request->getReferer() ? $request->getReferer() : 'model/index');
@@ -75,7 +76,7 @@ class modelActions extends sfActions
           $model->setUpdatedAt(date('Y-m-d'));
           $model->save();
           
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
           $this->redirect($request->getReferer() ? $request->getReferer() : 'model/index');
         }
     }

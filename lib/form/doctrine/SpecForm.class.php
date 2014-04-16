@@ -21,5 +21,7 @@ class SpecForm extends BaseSpecForm
 		$this->widgetSchema->setLabel('name', 'Нэр');
 		$this->widgetSchema->setLabel('name_en', 'Name');
 		$this->widgetSchema->setLabel('sort', 'Дэс дараалал');
+		
+		$this->widgetSchema->setHelp('sort', 'Тоо оруулна уу. Тухайн тоогоор буурахаар эрэмбэлэгдэж харагдана.');
 	}
 }

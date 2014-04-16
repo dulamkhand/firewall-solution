@@ -8,7 +8,7 @@
     <?php foreach ($rss as $product):?>
         <div class="box-product" style="margin:5px 0 0 10px;width:200px;height:80px;overflow:hidden;">
             <a href="<?php echo url_for('content/productShow?i='.$i.'&cid='.$product->getCategoryId().'&id='.$product->getId())?>">
-                <?php echo image_tag('/u/p/'.$product->getImage(), array('style'=>'max-width:120px;max-height:140px;'))?>
+                <?php echo image_tag('/u/p/t162-'.$product->getImage(), array('style'=>'max-width:120px;max-height:140px;'))?>
             </a>
             <div class="title-code">
                 <?php if($product->getCode()):?>

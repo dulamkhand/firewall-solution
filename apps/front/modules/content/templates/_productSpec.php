@@ -1,7 +1,10 @@
 <?php $color = $p->getColor() ? '#'.$p->getColor() : '#177B01'?>
 
-<?php if($sf_request->getParameter('action') == 'productShow'):?>
-    <a href="<?php echo url_for('content/serviceShow?id='.$p->getId().'&cid='.$p->getCategoryId())?>" style="float:right;display:block;margin:-16px -10px 0 0;"><?php echo image_tag('i/rent-icon.png', array('style'=>''))?></a>
+<?php if($sf_request->getParameter('action') == 'productShow' && $p->getHasLeasing()):?>
+    <a href="<?php echo url_for('content/serviceShow?id='.$p->getId().'&cid='.$p->getCategoryId())?>" 
+                                      style="float:right;display:block;margin:-16px -10px 0 0;">
+        <?php echo image_tag('i/rent-icon.png', array('style'=>''))?>
+    </a>
 <?php endif?>
 
 <div class="code" style="color:#666;width:250px;">
@@ -17,7 +20,7 @@
 <?php endif?>
 <br clear="all">
 
-<?php $models = GlobalTable::doExecute('ProductModel', array('productId'=>$p->getId()))?>
+<?php $models = GlobalTable::doExecute('ProductModel', array('productId'=>$p->getId(), 'orderBy'=>'sort DESC, name ASC, name_en ASC'))?>
 <table width="">
 		<tr>
 			<th style="border:1px solid <?php echo $color?>;color:#fff;padding:3px 10px;background:<?php echo $color?>;">
@@ -40,7 +43,7 @@
 			foreach ($rss as $rs) {
 			  	$productSpecs[$rs['spec_id']][$rs['model_id']] = $rs;
 			}?>
-<?php $specs = GlobalTable::doExecute('Spec', array())?>
+<?php $specs = GlobalTable::doExecute('Spec', array('orderBy'=>'sort DESC, name ASC, name_en ASC'))?>
 <?php foreach ($specs as $spec):?>
 		<?php $specId = $spec->getId()?>
 		<?php if(isset($productSpecs[$specId])):?>

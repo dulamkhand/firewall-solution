@@ -39,7 +39,7 @@
     <br clear="all">
     <br clear="all">
     <div class="fff" style="border-top:0px solid #FFEA01;">
-        Copyright @ 2014 All rights reserved. Simpedil Mongolia LLC
+        Copyright @ 2014 All rights reserved. Firewall Solution LLC
     </div>
 </div>
 </div><!--footer-->

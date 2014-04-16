@@ -55,11 +55,19 @@ class categoryActions extends sfActions
   public function executeDelete(sfWebRequest $request)
   {
     $this->forward404Unless($category = Doctrine::getTable('ProductCategory')->find(array($request->getParameter('id'))), sprintf('Object category does not exist (%s).', $request->getParameter('id')));
-
-    // TODO: cannot delete non empty category
-    $category->delete();
-
-    $this->getUser()->setFlash('flash', 'Successfully deleted.', true);
+    
+    $nb_children = GlobalTable::doCount('ProductCategory', array('parentId'=>$category->getId()));
+    if($nb_children == 0) {
+        $nb_products = GlobalTable::doCount('Product', array('categoryId'=>$category->getId()));
+        if($nb_products == 0) {
+            $category->delete();
+            $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);  
+        } else {
+            $this->getUser()->setFlash('flash', 'Категорит хамаарах бүтээгдэхүүнүүдийг устгасны дараа категорийг устгана уу.', true);
+        }
+    } else {
+        $this->getUser()->setFlash('flash', 'Дэд категориудыг устгасны дараа категорийг устгана уу.', true);
+    }
     $this->redirect('category/list');
   }
 
@@ -69,7 +77,7 @@ class categoryActions extends sfActions
     if ($form->isValid())
     {
       $category = $form->save();
-      $this->getUser()->setFlash('flash', 'Successfully saved.', true);
+      $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
       $this->redirect('category/list');
     }
   }

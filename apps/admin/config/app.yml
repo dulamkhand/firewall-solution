@@ -3,5 +3,5 @@
 
 # default values
 all:
-  host: http://www.simpedilmongolia.mn/
+  host: http://www.firewallsolution.mn/
   pager: 30

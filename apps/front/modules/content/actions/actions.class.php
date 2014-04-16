@@ -91,9 +91,6 @@ class contentActions extends sfActions
       $this->getResponse()->addMeta('keywords', sfConfig::get('app_meta_keywords').$product->getKeywords());
       
       $this->form = $this->processOrder($request, $product);
-      
-      // 
-      
   }
   
   
@@ -168,6 +165,7 @@ class contentActions extends sfActions
       return sfView::NONE;
   }
 
+
   public function processOrder(sfWebRequest $request, Product $product) {
       $form = new ProductOrderForm(null, array('productId'=>$product->getId()));
       if ($request->isMethod(sfRequest::POST)) 
@@ -179,7 +177,7 @@ class contentActions extends sfActions
 
             // send mail
             $mailBody = $this->getPartial("content/mailOrder", array('order'=>$order, 'product'=>$product));
-            $message = $this->getMailer()->compose(array('handaa.1224@gmail.com'), array('handaa.1224@gmail.com'=>'www.simpedilmongolia.mn'), 'www.simpedilmongolia.mn', $mailBody);
+            $message = $this->getMailer()->compose($order->getEmail(), array(sfConfig::get('app_invoice_email', 'sales@firewallsolution.mn')=>'www.firewallsolution.mn'), 'www.firewallsolution.mn', $mailBody);
             $message->setContentType("text/html");
             $this->getMailer()->send($message);
             

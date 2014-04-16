@@ -29,31 +29,6 @@ class mainActions extends sfActions
     {
         $this->page = Doctrine::getTable('Page')->findOneBy('type', 'aboutus');
     }
-
-    public function executeContact(sfWebRequest $request)
-    {
-        $form = new FeedbackForm();
-        if ($request->isMethod('POST')) 
-        {
-            $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
-            if ($form->isValid())
-            {
-              $feedback = $form->save();
-
-              // send mail
-              $mailBody = $this->getPartial("main/mail", array('feedback'=>$feedback));
-              $message = $this->getMailer()->compose(array($feedback->getEmail()), array('info@icon.mn'=>'www.icon.mn'), 'www.icon.mn :: бүтээгдэхүүн захиалга, санал хүсэлт', $mailBody);
-              $message->setContentType("text/html");
-              $this->getMailer()->send($message);
-              
-              $this->getUser()->setFlash('success', __('Successfully sent.'), true);
-              $this->redirect('@homepage');
-            }
-        }
-        
-        $this->form = $form;
-    }
-
     
     public function executeCulture(sfWebRequest $request)
     {

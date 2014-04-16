@@ -9,13 +9,15 @@
 </form>
 <br clear="all">
 
-<table width="70%">
+<table width="100%">
   <thead>
     <tr>
       <th>№</th>
       <th>Үзүүлэлт</th>
       <th>Specification</th>
       <th>Дэс дараалал</th>
+      <th>Үүсгэсэн</th>
+      <th>Засварласан</th>
       <th></th>
     </tr>
   </thead>
@@ -30,6 +32,8 @@
 					<a href="<?php echo url_for('spec/edit?id='.$spec->getId()) ?>"><?php echo $spec->getNameEn()?></a>
       </td>
       <td width="10%"><?php echo $spec->getSort() ?></td>
+      <td><?php echo $spec->getCreatedAt() ?></td>
+      <td><?php echo $spec->getUpdatedAt() ?></td>
       <td nowrap>
         <a href="<?php echo url_for('spec/edit?id='.$spec->getId()) ?>">Засварлах</a> &nbsp;&nbsp;|&nbsp;&nbsp;
         <a onclick="return confirm('Та итгэлтэй байна уу?')" href="<?php echo url_for('spec/delete?id='.$spec->getId()) ?>">Устгах</a>

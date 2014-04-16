@@ -117,7 +117,7 @@ class pollActions extends sfActions
     {
       $poll = $form->save();
       
-      $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+      $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
 
       $this->redirect('poll/optionNew?poll_id='.$poll->getId());
     }
@@ -132,7 +132,7 @@ class pollActions extends sfActions
     {
       $pollOption = $form->save();
       
-      $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+      $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
 
       $this->redirect('poll/optionNew?poll_id='.$pollOption->getPollId());
     }

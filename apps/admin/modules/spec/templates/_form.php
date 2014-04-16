@@ -43,6 +43,7 @@
         <td>
           <?php echo $form['sort']->renderError() ?>
           <?php echo $form['sort'] ?>
+          <?php echo $form['sort']->renderHelp() ?>
         </td>
       </tr>
     </tbody>

@@ -13,7 +13,8 @@ class pageActions extends sfActions
 
     public function executeIndex(sfWebRequest $request)
     {
-        $this->pager = Doctrine::getTable('Page')->getPager(array(), $request->getParameter('page',1));
+        $this->pager = Doctrine::getTable('Page')->getPager(array('type'=>$request->getParameter('type')), 
+                $request->getParameter('page',1));
     }
     
   
@@ -55,7 +56,7 @@ class pageActions extends sfActions
         $this->forward404Unless($page = Doctrine::getTable('Page')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $page->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
         $this->redirect($request->getReferer() ? $request->getReferer() : 'page/index');
@@ -67,8 +68,12 @@ class pageActions extends sfActions
         if ($form->isValid())
         {
           $page = $form->save();
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
-          $this->redirect($request->getReferer() ? $request->getReferer() : 'page/index');
+          
+          if($page->getImage() && !file_exists(sfConfig::get('sf_upload_dir').'/page/t350-'.$page->getImage()))
+		          GlobalLib::createThumbs($page->getImage(), 'page', array(350), false);
+          
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
+          $this->redirect($request->getReferer() ? $request->getReferer() : 'page/index?type='.$page->getType());
         }
     }
 

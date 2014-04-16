@@ -3,7 +3,7 @@
 <?php $j=0; foreach ($products as $product):?>
     <div class="box-product" style="<?php if(++$j==4) {echo 'margin-right:0'; $j=0;}?>">
         <a href="<?php echo url_for('content/'.$act.'Show?cid='.$product->getCategoryId().'&id='.$product->getId())?>" class="img">
-            <?php echo image_tag('/u/p/'.$product->getImage(), array())?>
+            <?php echo image_tag('/u/p/t162-'.$product->getImage(), array())?>
         </a>
         <a href="<?php echo url_for('content/'.$act.'Show?cid='.$product->getCategoryId().'&id='.$product->getId())?>" class="cover">
             <div class="code">

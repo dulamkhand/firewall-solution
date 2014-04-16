@@ -35,7 +35,7 @@ class ProductForm extends BaseProductForm
       $this->widgetSchema['image7']       = new sfWidgetFormInputFile(array(), array('style'=>'width:100px;'));
       $this->widgetSchema['image8']       = new sfWidgetFormInputFile(array(), array('style'=>'width:100px;'));
       $this->widgetSchema['pdf']       		= new sfWidgetFormInputFile(array(), array('style'=>'width:100px;'));
-    	$this->widgetSchema['video']      	= new sfWidgetFormInputText(array(), array('style'=>''));
+    	$this->widgetSchema['video']      	= new sfWidgetFormTextarea(array(), array('style'=>'width:450px;height:60px;'));
     	$this->widgetSchema['keywords']     = new sfWidgetFormTextarea(array(), array('style'=>'width:650px;height:60px;'));
     	$this->widgetSchema['has_leasing']  = new sfWidgetFormInputCheckbox(array(), array('value'=>1));
     	
@@ -64,15 +64,14 @@ class ProductForm extends BaseProductForm
 			$this->validatorSchema['keywords']     = new sfValidatorPass();
 			$this->validatorSchema['has_leasing']  = new sfValidatorPass();
 			//$this->validatorSchema['color']  			 = new sfValidatorPass();
-			$this->validatorSchema['rental_cost']  = new sfValidatorInteger();
+			$this->validatorSchema['rental_cost']  = new sfValidatorInteger(array('required'=>false));
 
 			$this->widgetSchema->setHelp('has_leasing', 'Түрээс-д харуулах эсэх');    	
       $this->widgetSchema->setHelp('image', 'Үндсэн зураг');
       $this->widgetSchema->setHelp('image1', '400x400px - png | gif | jpg');
-      $this->widgetSchema->setHelp('rental_cost', '₮/сараар');
-      //$this->widgetSchema->setHelp('color', '<a href="'.sfConfig::get('app_host').'images/bgcolors1536.png" target="_blank">Эндээс</a> өнгөний код сонгон оруулж үзүүлэлт хүснэгтийг өөр өөр өнгөөр харуулах боломжтой. (Оруулаагүй үед ногоон өнгөөр харагдана)');
+      $this->widgetSchema->setHelp('rental_cost', '₮/сараар');      
       $this->widgetSchema->setHelp('pdf', 'max 20MB - pdf | pdfx | doc | docx | xls | xlsx | ppt | pttx');      
-      $this->widgetSchema->setHelp('video', 'youtube url жишээ: '.htmlspecialchars('http://www.youtube.com/embed/LOMbySJTKpg'));
+      $this->widgetSchema->setHelp('video', '<br/>Зурагт үзүүлснээр хэмжээг сонгож embedcode-г оруулна -->');
       
       $this->widgetSchema->setLabel('has_leasing', 'Rent');
   }

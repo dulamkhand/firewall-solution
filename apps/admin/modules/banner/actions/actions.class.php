@@ -54,8 +54,7 @@ class bannerActions extends sfActions
   {
     $this->forward404Unless($banner = Doctrine_Core::getTable('Banner')->find(array($request->getParameter('id'))), sprintf('Object banner does not exist (%s).', $request->getParameter('id')));
     $banner->delete();
-
-    $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+    $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
 
     $this->redirect('banner/index');
   }
@@ -67,9 +66,10 @@ class bannerActions extends sfActions
     {
       $banner = $form->save();
 
-      GlobalLib::createThumbs($banner->getFilename(), 'b', array(780), false);
+      if($banner->getFilename() && !file_exists(sfConfig::get('sf_upload_dir').'/b/t970-'.$banner->getFilename()))
+          GlobalLib::createThumbs($banner->getFilename(), 'b', array(970), false);
 
-      $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+      $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
       $this->redirect('banner/index');
     }
   }

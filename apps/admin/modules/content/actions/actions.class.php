@@ -28,10 +28,10 @@ class contentActions extends sfActions
     
     public function executeFdelete(sfWebRequest $request)
     {
-        $this->forward404Unless($content = Doctrine::getTable('Feedback')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
+        $this->forward404Unless($content = Doctrine::getTable('ProductOrder')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $content->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
         $this->redirect('content/feedback');
@@ -76,7 +76,7 @@ class contentActions extends sfActions
         $this->forward404Unless($content = Doctrine::getTable('Content')->find(array($request->getParameter('id'))), sprintf('Object page does not exist (%s).', $request->getParameter('id')));
         try {
           $content->delete();
-          $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
         }catch (Exception $e){}
         
         $this->redirect($request->getReferer() ? $request->getReferer() : 'content/index');
@@ -90,7 +90,7 @@ class contentActions extends sfActions
         $content->setImage("");
         $content->save();
 
-        $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
         
         $this->redirect($request->getReferer() ? $request->getReferer() : 'content/index');
     }
@@ -105,7 +105,7 @@ class contentActions extends sfActions
           $content->setCreatedAt(date('Y-m-d H:i:s'));
           $content->save();
 
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
           $this->redirect($request->getReferer() ? $request->getReferer() : 'content/index');
         }
     }

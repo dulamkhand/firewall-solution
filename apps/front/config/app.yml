@@ -3,21 +3,22 @@
 
 # default values
 all:
-  host: http://www.simpedilmongolia.mn/
-  meta_title: SIMPEDIL MONGOLIA
-  meta_description: SIMPEDIL MONGOLIA барилгын тоног төхөөрөмжийн худалдаа түрээс зээл лийзинг, construction equipments trade rent and leasing
-  meta_keywords: SIMPEDIL MONGOLIA барилгын тоног төхөөрөмжийн худалдаа түрээс зээл лийзинг, construction equipments trade rent and leasing
+  host: http://www.firewallsolution.mn/
+  meta_title: firewall solution
+  meta_description: firewall solution
+  meta_keywords: firewall solution
   pager: 10
 
   phone: 99052507, 99031556, 99993979
   email: martino_ikhee@yahoo.com
-  address: Амгалан, М-Си-Эс Тiger үйлдвэрээс цааш 500 метрт<br>Улиастайн гүүрний наана "ЕВРО БАРИЛГА" худалдааны төв<br>Улаанбаатар хот, Монгол улс
-  address_en: Amgalan, 500 metres from MCS Тiger Factory<br>"EURO CONSTRACTION" trade center beside the Bridge of Uliastai<br>Ulaanbaatar, Mongolia
-  order_email: info@simpedilmongolia.mn
-  facebook: Simpedil
-  twitter: simpedilmongolia
+  address: Баянзүрх дүүрэг
+  address_en: Bayanzurkh district
+  order_email: info@firewallsolution.mn
+  facebook: FirewallSolution
+  twitter: FirewallSolution
   youtube: channel/UClyKDuRYYdBjzdZxEiKfLag
-  skype: simpedilmongolia
-  yahoo: simpedilmongolia
+  skype: FirewallSolution
+  yahoo: FirewallSolution
   lat: 47.9029
   lng: 107.029
+  invoice_email: info@firewallsolution.mn

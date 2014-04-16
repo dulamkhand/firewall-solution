@@ -29,7 +29,7 @@
         <td>
           <?php echo $form['filename']->renderError() ?>
           <?php echo $form['filename'] ?>
-          <div class="help"><?php echo $form['filename']->renderHelp() ?></div>
+          <?php echo $form['filename']->renderHelp() ?>
         </td>
       </tr>
       <tr>
@@ -37,6 +37,7 @@
         <td>
           <?php echo $form['sort']->renderError() ?>
           <?php echo $form['sort'] ?>
+          <?php echo $form['sort']->renderHelp() ?>
         </td>
       </tr>
     </tbody>

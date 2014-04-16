@@ -31,7 +31,7 @@ class userActions extends sfActions
       {
         $admin = $form->getObject1();
         $this->getUser()->signIn($admin);
-        $this->getUser()->setFlash('success', 'Амжилттай нэвтэрлээ.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай нэвтэрлээ.', true);
         $this->redirect("@homepage");
       }
     }
@@ -43,7 +43,7 @@ class userActions extends sfActions
   public function executeLogout(sfWebRequest $request)
   {
     $this->getUser()->signOut();
-    $this->getUser()->setFlash('success', 'Холболт амжилттай тасарлаа.', true);
+    $this->getUser()->setFlash('flash', 'Холболт амжилттай тасарлаа.', true);
     $this->redirect('@login');
   }
   
@@ -99,7 +99,7 @@ class userActions extends sfActions
   
       try {
         $user->delete();
-        $this->getUser()->setFlash('success', 'Амжилттай устлаа.', true);
+        $this->getUser()->setFlash('flash', 'Амжилттай устлаа.', true);
       }catch (Exception  $e){}
   
       $this->redirect('user/list');
@@ -120,7 +120,7 @@ class userActions extends sfActions
           if($isNew) $user->setCreatedAt($date);
           $user->save();
     
-          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
     
           $this->redirect('user/list');
       }

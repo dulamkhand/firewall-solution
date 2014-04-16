@@ -17,14 +17,14 @@
   <body>
     <div id="container">
       <div id="header">
-        <h2 style="margin-top:26px;">SIMPEDIL MONGOLIA | ADMIN PANEL</h2>
+        <h2 style="margin-top:26px;">FIREWALL SOLUTION | ADMIN PANEL</h2>
         <?php $tab = isset($tab) ? $tab : $sf_request->getParameter('module'); ?>
         <?php $action = $sf_request->getParameter('action'); ?>
   
         <br clear="all">
         <div id="topmenu">
           <ul>
-	            <?php if($sf_user->isAuthenticated() && $sf_user->hasCredential('admin-simpedil')):?>
+	            <?php if($sf_user->isAuthenticated() && $sf_user->hasCredential('admin-firewall')):?>
 	            		<li <?php echo ($tab == 'content' && $action == "feedback") ? 'class="current"' : '' ?>>
 		                  <?php echo link_to('Үнийн санал', 'content/feedback')?>
 		              </li>
@@ -32,7 +32,7 @@
 		                  <?php echo link_to('Слайдер', 'banner/index')?>
 		              </li>
 		              <li <?php echo ($tab == 'category') ? 'class="current"' : '' ?>>
-		                  <?php echo link_to('Бүтээгдэхүүний категори', 'category/list')?>
+		                  <?php echo link_to('Категори', 'category/list')?>
 		              </li>
 		              <li <?php echo ($tab == 'spec') ? 'class="current"' : '' ?>>
 		                  <?php echo link_to('Бүтээгдэхүүний үзүүлэлт', 'spec/index')?>
@@ -40,11 +40,14 @@
 		              <li <?php echo $tab == 'product' ? 'class="current"' : '' ?>>
 		                  <?php echo link_to('Бүтээгдэхүүн', 'product/index')?>
 		              </li>
+		              <li <?php echo ($tab == 'page' && $sf_params->get('type') == 'gypsum') ? 'class="current"' : '' ?>>
+		                  <?php echo link_to('Гипсон хавтан', 'page/index?type=gypsum')?>
+		              </li>
 		              <li <?php echo ($tab == 'content' && $action == "index") ? 'class="current"' : '' ?>>
 		                  <?php echo link_to('Мэдээ мэдээлэл', 'content/index')?>
 		              </li>		              
-		              <li <?php echo $tab == 'page' ? 'class="current"' : '' ?>>
-		                  <?php echo link_to('Бидний тухай', 'page/index')?>
+		              <li <?php echo ($tab == 'page' && $sf_params->get('type') == 'aboutus') ? 'class="current"' : '' ?>>
+		                  <?php echo link_to('Бидний тухай', 'page/index?type=aboutus')?>
 		              </li>
 		              <li <?php echo $tab == 'user' ? 'class="current"' : '' ?>>
 		                  <?php echo link_to('Админ', 'user/list')?>
@@ -69,7 +72,7 @@
       </div>
   
       <div id="footer">
-        	Copyright &copy; 2014 &nbsp; SIMPEDIL LLC
+        	Copyright &copy; 2014 &nbsp; FIREWALL SOLUTION LLC
         	<br clear="all">
       </div>
       

@@ -7,10 +7,10 @@
 Бүтээгдэхүүн: <b><?php echo $product->getTitle().' / '.$product->getTitleEn()?></b>
 <input type="hidden" name="productId" value="<?php echo $product->getId()?>"/>
 
-<table width="50%">
+<table width="70%">
 		<tr>
 			<td></td>
-			<?php $models = GlobalTable::doFetchArray('ProductModel', array('productId'=>$product->getId()))?>
+			<?php $models = GlobalTable::doFetchArray('ProductModel', array('productId'=>$product->getId(), 'orderBy'=>'sort DESC, name ASC, name_en ASC'))?>
 			<?php if(sizeof($models)):?>
 					<?php foreach ($models as $model):?>
 							<th>
@@ -22,17 +22,18 @@
 			<?php endif?>
 		</tr>
 <?php $rss = Doctrine::getTable('ProductSpec')->createQuery()
-								->where('product_id =? ', $product->getId())->fetchArray();
+								->where('product_id =? ', $product->getId())								
+								->fetchArray();
 			$productSpecs = array();
 			foreach ($rss as $rs) {
 			  	$productSpecs[$rs['spec_id']][$rs['model_id']] = $rs;
 			}?>
-<?php $specs = GlobalTable::doFetchArray('Spec', array())?>
+<?php $specs = GlobalTable::doFetchArray('Spec', array('orderBy'=>'sort DESC, name ASC, name_en ASC'))?>
 <?php foreach ($specs as $spec):?>
 		<?php $specId = $spec['id']?>
 		<tr>
 			<td>
-				<label class="clean" style="width:150px;font-weight:normal;">
+				<label class="clean" style="width:250px;font-weight:normal;">
 						<input type="checkbox" name="spec_checks[]" value="<?php echo $specId?>" tabindex="<?php echo $specId?>" class="spec_checks"
 								<?php echo isset($productSpecs[$specId]) ? 'checked' : ''?> />
 						<?php echo $spec['name']?> / <?php echo $spec['name_en']?>
@@ -41,12 +42,12 @@
 			<?php if(sizeof($models)):?>
 					<?php foreach ($models as $model):?>
 							<?php $modelId = $model['id']?>
-							<td><input type="text" name="spec_<?php echo $specId?>_<?php echo $modelId?>" style="width:60px;"
+							<td><input type="text" name="spec_<?php echo $specId?>_<?php echo $modelId?>" style="width:100px;"
 								value="<?php echo isset($productSpecs[$specId][$modelId]) ? $productSpecs[$specId][$modelId]['body'] : ''?>" <?php if(!isset($productSpecs[$specId][$modelId])) echo 'disabled'?>
 						 		class="stext spec_text_<?php echo $specId?> <?php echo isset($productSpecs[$specId][$modelId]) ? 'enabled' : 'disabled'?>"/></td>
 					<?php endforeach?>
 			<?php else:?>
-					<td><input type="text" name="spec_<?php echo $specId?>_0" style="width:60px;"
+					<td><input type="text" name="spec_<?php echo $specId?>_0" style="width:100px;"
 								value="<?php echo isset($productSpecs[$specId][0]) ? $productSpecs[$specId][0]['body'] : ''?>" <?php if(!isset($productSpecs[$specId][0])) echo 'disabled'?>
 						 		class="stext spec_text_<?php echo $specId?> <?php echo isset($productSpecs[$specId][0]) ? 'enabled' : 'disabled'?>"/></td>
 			<?php endif?>

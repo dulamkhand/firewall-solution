@@ -25,7 +25,7 @@
       <?php $p = $feedback->getProduct()?>
       <td>
           <b><?php echo $p->getTitle().'<br>('.$p->getTitleEn().')</b><br><i>'.$p->getCode()?></i><br>
-          <?php if($p->getImage()) echo link_to(image_tag('/u/p/'.$p->getImage(), array('style'=>'max-width:130px;')), sfConfig::get('app_host').'index.php/product/'.$p->getId().'.xhtml?cid='.$p->getCategoryId(), array('target'=>'_blank'));?></td>
+          <?php if($p->getImage()) echo link_to(image_tag('/u/p/t162-'.$p->getImage(), array('style'=>'max-width:130px;')), sfConfig::get('app_host').'index.php/product/'.$p->getId().'.xhtml?cid='.$p->getCategoryId(), array('target'=>'_blank'));?></td>
       <td><?php echo $feedback->getOrganization()?></td>
       <td><?php echo $feedback->getPosition()?></td>
       <td><?php echo $feedback->getName()?></td>

@@ -507,4 +507,4 @@ table.clean th, table.clean td {
 .bold{font-weight:bold;}
 .help{color:#666;}
 
-.flash{margin:0;padding:10px;background:rgba(0,0,0, 0.1);color:green;font-weight:bold;width:50%;}
+.flash{margin:0 0 10px 0;padding:10px;background:rgba(230, 230, 30, 0.3);color:green;font-weight:bold;width:95%;}

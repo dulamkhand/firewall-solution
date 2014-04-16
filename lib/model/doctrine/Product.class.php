@@ -41,6 +41,6 @@ class Product extends BaseProduct
     
     public function getNbModel()
     {
-    		return '0';
+        return GlobalTable::doCount('ProductModel', array('productId'=>$this->getId()));        
 		}
 }

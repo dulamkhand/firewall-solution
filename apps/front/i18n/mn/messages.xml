@@ -217,6 +217,14 @@
         <source>Email successfully sent.</source>
         <target>Таны зурвасыг амжилттай илгээлээ.</target>
       </trans-unit>
+      <trans-unit>
+        <source>Required</source>
+        <target>Утга оруулна уу</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Rental cost calculation</source>
+        <target>Түрээсийн үнэ тооцоолох</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

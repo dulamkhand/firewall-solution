@@ -7,7 +7,7 @@
 </h4>
 <div id="formOrderContainer" style="display:<?php echo $sf_request->isMethod(sfRequest::POST) ? 'block' : 'none'?>;background:#fff;margin:7px 10px 5px 10px;padding:15px;">
     		    
-    <form action="<?php echo url_for('content/productShow?id='.$product->getId().'&cid='.$product->getCategoryId().'&i='.$sf_params->get('i'))?>" method="post" id="formOrder">
+    <form action="<?php echo url_for('content/'.$act.'Show?id='.$product->getId().'&cid='.$product->getCategoryId().'&i='.$sf_params->get('i'))?>" method="post" id="formOrder">
     		<input type="hidden" value="<?php echo $product->getId()?>" name="id"/>
         <?php echo $form['product_id'] ?>
     		<div class="gray">* <?php echo __('fields are mandatory')?></div>
@@ -109,4 +109,3 @@ $(document).ready(function(){
 
 </div>
 </div>
-        

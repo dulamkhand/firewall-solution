@@ -50,7 +50,7 @@ class productSpecActions extends sfActions
 	          }
 	          $product->setColor($request->getParameter('color'));
           	$product->save();
-	          $this->getUser()->setFlash('success', 'Амжилттай хадгалагдлаа.', true);
+	          $this->getUser()->setFlash('flash', 'Амжилттай хадгалагдлаа.', true);
         }
         $this->redirect('productSpec/index?productId='.$product->getId());
     }
