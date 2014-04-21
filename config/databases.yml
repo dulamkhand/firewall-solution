@@ -9,6 +9,6 @@ all:
       #username: simpel6r_user1
       #password: Password1!
       
-      dsn:      mysql:host=localhost;dbname=simpedil
+      dsn:      mysql:host=localhost;dbname=firewall
       username: root
       password:
