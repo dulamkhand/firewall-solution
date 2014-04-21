@@ -3,17 +3,18 @@
 
 # default values
 all:
-  host: http://www.firewallsolution.mn/
+  #host: http://firewall/
+  host: http://firewall/
   meta_title: firewall solution
   meta_description: firewall solution
   meta_keywords: firewall solution
   pager: 10
 
-  phone: 99052507, 99031556, 99993979
-  email: martino_ikhee@yahoo.com
+  phone: 99026025, 99071053
+  email: firewallsolution.llc@gmail.com
   address: Баянзүрх дүүрэг
   address_en: Bayanzurkh district
-  order_email: info@firewallsolution.mn
+  order_email: firewallsolution.llc@gmail.com
   facebook: FirewallSolution
   twitter: FirewallSolution
   youtube: channel/UClyKDuRYYdBjzdZxEiKfLag
@@ -21,4 +22,4 @@ all:
   yahoo: FirewallSolution
   lat: 47.9029
   lng: 107.029
-  invoice_email: info@firewallsolution.mn
+  invoice_email: firewallsolution.llc@gmail.com

@@ -15,9 +15,12 @@ class mainActions extends sfActions
     {
         ProjectConfiguration::getApplicationConfiguration('front', 'dev', true)->loadHelpers('I18N');
     }
-    
 
     public function executeIndex(sfWebRequest $request)
+    {
+    }
+    
+    public function executeContact(sfWebRequest $request)
     {
     }
     
