@@ -4,7 +4,14 @@ hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Tahoma,sans-serif
 line-height:24px;position:relative;color:#333;margin:0;padding:0;border:0;outline:0;background:transparent;}
 
 body{background:url(../images/bg-h.png) repeat;}
-.wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
+.wrapper{width:1200px;margin:0 auto;position:relative;background:transparent;}
+#header{clear:both;height:62px;position:relative;text-align:center;top:34px;z-index:350;}
+#header #menu{background:url("../images/menu.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+              height:62px;line-height:62px;position:absolute;left:100px;width:950px;}
+#header #menu ul{}
+#header #menu ul li{float:left;}
+#header #menu ul li a{float:left;font-weight:bold;margin:15px 30px;color:#000;text-decoration:none;}
+    
 
 #sideleft {width:180px;margin:0;padding:10px;background:rgba(0,63,100,0.8);
     min-height:700px;border-right:2px solid #003F64a;float:left;
