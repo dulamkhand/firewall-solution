@@ -4,7 +4,7 @@
 # default values
 all:
   #host: http://firewall/
-  host: http://firewall/
+  host: http://localhost:88/firewall/web/
   meta_title: firewall solution
   meta_description: firewall solution
   meta_keywords: firewall solution

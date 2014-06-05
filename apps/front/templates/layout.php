@@ -25,9 +25,7 @@
     <?php include_javascripts() ?>
 </head>
 
-<body <?php if(in_array($sf_params->get('action'), array('products', 'productShow'))) 
-    echo 'style="background:url('.$host.'images/bg-p.png) repeat;"'?>>
-
+<body>
 <div id="fb-root"></div>
 <!--<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,21 +36,21 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 -->
 
-<?php include_partial("global/sideleft", array());?>
-
-<div id="content">
-    <?php include_partial("content/slider", array());?>
+<div class="wrapper">
+    <?php include_partial("global/header", array());?>
+    <div id="content">
+        <?php include_partial("content/slider", array());?>
+        
+        <?php if ($sf_user->hasFlash('flash')): ?>
+    	      <div class="flash"><?php echo $sf_user->getFlash('flash')?></div>
+    	  <?php endif; ?>
     
-    <?php if ($sf_user->hasFlash('flash')): ?>
-	      <div class="flash"><?php echo $sf_user->getFlash('flash')?></div>
-	  <?php endif; ?>
-
-    <?php echo $sf_content?>
-    
-    <br clear="all">
+        <?php echo $sf_content?>
+        
+        <br clear="all">
+    </div>
 </div>
 
-<br clear="all">
 <br clear="all">
 <?php include_partial("global/footer", array());?>
 
