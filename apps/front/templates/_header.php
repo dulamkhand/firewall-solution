@@ -8,6 +8,9 @@
         <li class="<?php if($action == 'about') echo 'current'?>">
            <a href="<?php echo url_for('main/about')?>"><?php echo __('About Us')?></a>
         </li>
+        <li class="<?php if($action == 'about') echo 'current'?>">
+           <a href="<?php echo url_for('main/about')?>"><?php echo __('Our success')?></a>
+        </li>
         <li class="<?php if(in_array($action, array('products', 'productShow'))) echo 'current'?>">
            <a href="<?php echo url_for('content/products')?>"><?php echo __('Our service')?></a>
         </li>

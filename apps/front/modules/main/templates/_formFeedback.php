@@ -1,21 +1,38 @@
 <form action="<?php echo url_for('main/contact')?>" method="post" id="formFeedback">
-    <h2 style="margin:0 0 10px 3px;"><?php echo __('BOOK A PRODUCT')?></h2>
-    <?php echo $form['organization']->renderError() ?>
-    <?php echo $form['organization'] ?>
-
-    <?php echo $form['name']->renderError() ?>
-    <?php echo $form['name'] ?>
-  
-    <?php echo $form['email']->renderError() ?>
-    <?php echo $form['email'] ?>
-  
-    <?php echo $form['phone']->renderError() ?>
-    <?php echo $form['phone'] ?>
-	
-    <?php echo $form['message']->renderError() ?>
-    <?php echo $form['message'] ?>
-    
-    <a href="javascript:$('#formFeedback').submit();" class="button"><?php echo __('SEND')?></a>
+    <table width="100%">
+      <tr>
+          <td>
+              <?php echo $form['organization']->renderError() ?>
+              <?php echo $form['organization'] ?>
+          </td>
+          <td>
+              <?php echo $form['name']->renderError() ?>
+              <?php echo $form['name'] ?>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <?php echo $form['email']->renderError() ?>
+              <?php echo $form['email'] ?>
+          </td>
+          <td>
+              <?php echo $form['phone']->renderError() ?>
+              <?php echo $form['phone'] ?>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+              <?php echo $form['message']->renderError() ?>
+              <?php echo $form['message'] ?>
+          </td>
+      </tr>
+      <tr>
+         <td colspan="2">
+            <a href="javascript:$('#formFeedback').submit();" class="button"><?php echo __('SEND')?></a>
+         </td>
+      </tr>
+    </table>
+    <br clear="all">
 </form>
 
 

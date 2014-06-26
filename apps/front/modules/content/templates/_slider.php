@@ -2,7 +2,7 @@
 <div class="flexslider">
   <ul class="slides">
     <?php foreach ($reks as $rek):?>
-        <li><?php echo image_tag('/u/b/'.$rek['filename'], array('style'=>'width:1200px;height:500px;'))?></li>
+        <li><?php echo image_tag('/u/b/'.$rek['filename'], array('style'=>'max-width:600px;max-height:500px;margin:30px 0 0 200px;'))?></li>
     <?php endforeach;?>
   </ul>
 </div><!--flexslider-->
@@ -13,7 +13,7 @@ $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
     directionNav: false,
-    itemWidth:1200,
+    itemWidth:1000,
     itemHeight:500,
   });
 });
