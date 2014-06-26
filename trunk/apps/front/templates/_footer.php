@@ -1,5 +1,11 @@
+<br clear="all">
+<br clear="all">
 <div id="footer">
-    <div class="fff" style="border-top:0px solid #FFEA01;text-align:center;">
-        Copyright @ 2014 All rights reserved. Firewall Solution LLC
-    </div>
+    <ul>
+        <li>@ 2014 All rights reserved. Firewall Solution LLC</li>
+        <li class="sep">|</li>
+        <li><a href="#" class="left">Legal</a></li>
+        <li class="sep">|</li>
+        <li><a href="#" class="left">Privacy</a></li>
+    </ul>    
 </div><!--footer-->

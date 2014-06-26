@@ -19,7 +19,7 @@ class FeedbackForm extends BaseFeedbackForm
       $this->widgetSchema['name']       = new sfWidgetFormInputText(array(), array('class'=>'field'));
       $this->widgetSchema['email']      = new sfWidgetFormInputText(array(), array('class'=>'field'));
       $this->widgetSchema['phone']      = new sfWidgetFormInputText(array(), array('class'=>'field'));
-    	$this->widgetSchema['message']    = new sfWidgetFormTextarea(array(), array('class'=>'field', 'style'=>'height:80px;'));
+    	$this->widgetSchema['message']    = new sfWidgetFormTextarea(array(), array('class'=>'field'));
 
 
     	# VALIDATORS
