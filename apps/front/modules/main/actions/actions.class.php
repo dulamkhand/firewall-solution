@@ -18,19 +18,27 @@ class mainActions extends sfActions
 
     public function executeIndex(sfWebRequest $request)
     {
-    }
-    
-    public function executeContact(sfWebRequest $request)
-    {
-    }
-    
-    public function executeGypsum() {
-				$this->page = Doctrine::getTable('Page')->findOneBy('type', 'gypsum');
-	  }
+        $form = new FeedbackForm();
+        if ($request->isMethod('POST')) 
+        {
+            $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+            if ($form->isValid())
+            {
+                $feedback = $form->save();
   
-    public function executeAbout(sfWebRequest $request)
-    {
-        $this->page = Doctrine::getTable('Page')->findOneBy('type', 'aboutus');
+                // send mail
+                $mailBody = $this->getPartial("main/mail", array('feedback'=>$feedback));
+                $message = $this->getMailer()->compose(array($feedback->getEmail()), array('info@firewall-solution.mn'=>'www.firewall-solution.mn'), 'www.firewall-solution.mn :: захидал, захиалга, санал хүсэлт', $mailBody);
+                $message->setContentType("text/html");
+                $this->getMailer()->send($message);
+                
+                $this->getUser()->setFlash('success', __('Successfully sent.'), true);
+                
+                $this->redirect('@homepage');
+            }
+        }
+        
+        $this->form = $form;
     }
     
     public function executeCulture(sfWebRequest $request)
@@ -46,7 +54,6 @@ class mainActions extends sfActions
     {    
         $this->setTemplate("default");
         $this->setLayout("layout");
-        
         return sfView::SUCCESS;
     }
 
