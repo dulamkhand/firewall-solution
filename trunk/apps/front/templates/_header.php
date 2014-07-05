@@ -9,19 +9,19 @@
           </a>
         </li>
         <li class="<?php if($action == 'about') echo 'current'?>">
-           <a href="<?php echo url_for('main/about')?>"><?php echo __('Товч танилцуулга')?></a>
+           <a href="<?php echo url_for('main/about')?>"><?php echo __('Brief intro')?></a>
         </li>
         <li class="separator"></li>
         <li class="<?php if(in_array($action, array('products', 'productShow'))) echo 'current'?>">
-           <a href="<?php echo url_for('content/products')?>"><?php echo __('Бүтээгдэхүүн үйлчилгээ')?></a>
+           <a href="<?php echo url_for('content/products')?>"><?php echo __('Products and services')?></a>
         </li>
         <li class="separator"></li>
         <li class="<?php if($action == 'jobs') echo 'current'?>">
-           <a href="<?php echo url_for('main/about')?>"><?php echo __('Хийж гүйцэтгэсэн ажлууд')?></a>
+           <a href="<?php echo url_for('main/about')?>"><?php echo __('Works we did')?></a>
         </li>
         <li class="separator"></li>
         <li class="<?php if($action == 'clients') echo 'current'?>">
-           <a href="<?php echo url_for('main/clients')?>"><?php echo __('Харилцагч байгууллагууд')?></a>
+           <a href="<?php echo url_for('main/clients')?>"><?php echo __('Our clients')?></a>
         </li>
         <li class="separator"></li>
         <li class="<?php if($action == 'contact') echo 'current'?>">
