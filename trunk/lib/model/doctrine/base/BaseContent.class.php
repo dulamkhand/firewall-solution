@@ -13,8 +13,8 @@ Doctrine_Manager::getInstance()->bindComponent('Content', 'doctrine');
  * @property string $image
  * @property string $body
  * @property string $body_en
- * @property boolean $is_active
- * @property boolean $is_featuired
+ * @property integer $is_active
+ * @property integer $is_featuired
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * 
@@ -24,8 +24,8 @@ Doctrine_Manager::getInstance()->bindComponent('Content', 'doctrine');
  * @method string    getImage()        Returns the current record's "image" value
  * @method string    getBody()         Returns the current record's "body" value
  * @method string    getBodyEn()       Returns the current record's "body_en" value
- * @method boolean   getIsActive()     Returns the current record's "is_active" value
- * @method boolean   getIsFeatuired()  Returns the current record's "is_featuired" value
+ * @method integer   getIsActive()     Returns the current record's "is_active" value
+ * @method integer   getIsFeatuired()  Returns the current record's "is_featuired" value
  * @method timestamp getCreatedAt()    Returns the current record's "created_at" value
  * @method timestamp getUpdatedAt()    Returns the current record's "updated_at" value
  * @method Content   setId()           Sets the current record's "id" value
@@ -102,21 +102,23 @@ abstract class BaseContent extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => '',
              ));
-        $this->hasColumn('is_active', 'boolean', null, array(
-             'type' => 'boolean',
+        $this->hasColumn('is_active', 'integer', 1, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
+             'length' => 1,
              ));
-        $this->hasColumn('is_featuired', 'boolean', null, array(
-             'type' => 'boolean',
+        $this->hasColumn('is_featuired', 'integer', 1, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
+             'length' => 1,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',

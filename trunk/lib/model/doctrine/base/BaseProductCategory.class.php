@@ -11,7 +11,7 @@ Doctrine_Manager::getInstance()->bindComponent('ProductCategory', 'doctrine');
  * @property integer $parent_id
  * @property string $name
  * @property string $name_en
- * @property boolean $has_leasing
+ * @property integer $has_leasing
  * @property integer $sort
  * @property timestamp $created_at
  * @property timestamp $updated_at
@@ -21,7 +21,7 @@ Doctrine_Manager::getInstance()->bindComponent('ProductCategory', 'doctrine');
  * @method integer             getParentId()    Returns the current record's "parent_id" value
  * @method string              getName()        Returns the current record's "name" value
  * @method string              getNameEn()      Returns the current record's "name_en" value
- * @method boolean             getHasLeasing()  Returns the current record's "has_leasing" value
+ * @method integer             getHasLeasing()  Returns the current record's "has_leasing" value
  * @method integer             getSort()        Returns the current record's "sort" value
  * @method timestamp           getCreatedAt()   Returns the current record's "created_at" value
  * @method timestamp           getUpdatedAt()   Returns the current record's "updated_at" value
@@ -81,13 +81,14 @@ abstract class BaseProductCategory extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 255,
              ));
-        $this->hasColumn('has_leasing', 'boolean', null, array(
-             'type' => 'boolean',
+        $this->hasColumn('has_leasing', 'integer', 1, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
+             'length' => 1,
              ));
         $this->hasColumn('sort', 'integer', 4, array(
              'type' => 'integer',

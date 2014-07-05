@@ -22,7 +22,7 @@ abstract class BasePageForm extends BaseFormDoctrine
       'image'      => new sfWidgetFormInputText(),
       'content'    => new sfWidgetFormTextarea(),
       'content_en' => new sfWidgetFormTextarea(),
-      'on_home'    => new sfWidgetFormInputCheckbox(),
+      'on_home'    => new sfWidgetFormInputText(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -35,7 +35,7 @@ abstract class BasePageForm extends BaseFormDoctrine
       'image'      => new sfValidatorString(array('max_length' => 255)),
       'content'    => new sfValidatorString(),
       'content_en' => new sfValidatorString(),
-      'on_home'    => new sfValidatorBoolean(),
+      'on_home'    => new sfValidatorInteger(),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(array('required' => false)),
     ));

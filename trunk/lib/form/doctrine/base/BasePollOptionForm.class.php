@@ -19,7 +19,6 @@ abstract class BasePollOptionForm extends BaseFormDoctrine
       'poll_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Poll'), 'add_empty' => false)),
       'text'    => new sfWidgetFormTextarea(),
       'text_en' => new sfWidgetFormTextarea(),
-      'text_ru' => new sfWidgetFormTextarea(),
       'number'  => new sfWidgetFormInputText(),
       'sort'    => new sfWidgetFormInputText(),
     ));
@@ -29,7 +28,6 @@ abstract class BasePollOptionForm extends BaseFormDoctrine
       'poll_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Poll'))),
       'text'    => new sfValidatorString(),
       'text_en' => new sfValidatorString(),
-      'text_ru' => new sfValidatorString(),
       'number'  => new sfValidatorInteger(),
       'sort'    => new sfValidatorInteger(),
     ));

@@ -21,8 +21,8 @@ abstract class BaseContentForm extends BaseFormDoctrine
       'image'        => new sfWidgetFormInputText(),
       'body'         => new sfWidgetFormTextarea(),
       'body_en'      => new sfWidgetFormTextarea(),
-      'is_active'    => new sfWidgetFormInputCheckbox(),
-      'is_featuired' => new sfWidgetFormInputCheckbox(),
+      'is_active'    => new sfWidgetFormInputText(),
+      'is_featuired' => new sfWidgetFormInputText(),
       'created_at'   => new sfWidgetFormDateTime(),
       'updated_at'   => new sfWidgetFormDateTime(),
     ));
@@ -34,8 +34,8 @@ abstract class BaseContentForm extends BaseFormDoctrine
       'image'        => new sfValidatorString(array('max_length' => 255)),
       'body'         => new sfValidatorString(array('required' => false)),
       'body_en'      => new sfValidatorString(),
-      'is_active'    => new sfValidatorBoolean(),
-      'is_featuired' => new sfValidatorBoolean(),
+      'is_active'    => new sfValidatorInteger(),
+      'is_featuired' => new sfValidatorInteger(),
       'created_at'   => new sfValidatorDateTime(),
       'updated_at'   => new sfValidatorDateTime(array('required' => false)),
     ));

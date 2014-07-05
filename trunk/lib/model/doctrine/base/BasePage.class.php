@@ -14,7 +14,7 @@ Doctrine_Manager::getInstance()->bindComponent('Page', 'doctrine');
  * @property string $image
  * @property string $content
  * @property string $content_en
- * @property boolean $on_home
+ * @property integer $on_home
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * 
@@ -25,7 +25,7 @@ Doctrine_Manager::getInstance()->bindComponent('Page', 'doctrine');
  * @method string    getImage()      Returns the current record's "image" value
  * @method string    getContent()    Returns the current record's "content" value
  * @method string    getContentEn()  Returns the current record's "content_en" value
- * @method boolean   getOnHome()     Returns the current record's "on_home" value
+ * @method integer   getOnHome()     Returns the current record's "on_home" value
  * @method timestamp getCreatedAt()  Returns the current record's "created_at" value
  * @method timestamp getUpdatedAt()  Returns the current record's "updated_at" value
  * @method Page      setId()         Sets the current record's "id" value
@@ -111,13 +111,14 @@ abstract class BasePage extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => '',
              ));
-        $this->hasColumn('on_home', 'boolean', null, array(
-             'type' => 'boolean',
+        $this->hasColumn('on_home', 'integer', 1, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
+             'length' => 1,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',
