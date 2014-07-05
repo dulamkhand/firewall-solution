@@ -11,7 +11,6 @@ Doctrine_Manager::getInstance()->bindComponent('PollOption', 'doctrine');
  * @property integer $poll_id
  * @property string $text
  * @property string $text_en
- * @property string $text_ru
  * @property integer $number
  * @property integer $sort
  * @property Poll $Poll
@@ -20,7 +19,6 @@ Doctrine_Manager::getInstance()->bindComponent('PollOption', 'doctrine');
  * @method integer    getPollId()  Returns the current record's "poll_id" value
  * @method string     getText()    Returns the current record's "text" value
  * @method string     getTextEn()  Returns the current record's "text_en" value
- * @method string     getTextRu()  Returns the current record's "text_ru" value
  * @method integer    getNumber()  Returns the current record's "number" value
  * @method integer    getSort()    Returns the current record's "sort" value
  * @method Poll       getPoll()    Returns the current record's "Poll" value
@@ -28,7 +26,6 @@ Doctrine_Manager::getInstance()->bindComponent('PollOption', 'doctrine');
  * @method PollOption setPollId()  Sets the current record's "poll_id" value
  * @method PollOption setText()    Sets the current record's "text" value
  * @method PollOption setTextEn()  Sets the current record's "text_en" value
- * @method PollOption setTextRu()  Sets the current record's "text_ru" value
  * @method PollOption setNumber()  Sets the current record's "number" value
  * @method PollOption setSort()    Sets the current record's "sort" value
  * @method PollOption setPoll()    Sets the current record's "Poll" value
@@ -70,15 +67,6 @@ abstract class BasePollOption extends sfDoctrineRecord
              'length' => '',
              ));
         $this->hasColumn('text_en', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '',
-             ));
-        $this->hasColumn('text_ru', 'string', null, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,

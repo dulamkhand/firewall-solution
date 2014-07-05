@@ -29,6 +29,38 @@ Banner:
       primary: false
       notnull: true
       autoincrement: false
+Client:
+  connection: doctrine
+  tableName: client
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    logo:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
 Comment:
   connection: doctrine
   tableName: comment
@@ -134,14 +166,14 @@ Content:
       notnull: true
       autoincrement: false
     is_active:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
       notnull: true
       autoincrement: false
     is_featuired:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
@@ -333,7 +365,7 @@ Page:
       notnull: true
       autoincrement: false
     on_home:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
@@ -430,13 +462,6 @@ PollOption:
       notnull: true
       autoincrement: false
     text_en:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    text_ru:
       type: string()
       fixed: false
       unsigned: false
@@ -620,7 +645,7 @@ Product:
       notnull: true
       autoincrement: false
     has_leasing:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
@@ -641,7 +666,7 @@ Product:
       notnull: true
       autoincrement: false
     is_featured:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
@@ -667,18 +692,6 @@ Product:
       local: category_id
       foreign: id
       type: one
-    ProductModel:
-      local: id
-      foreign: product_id
-      type: many
-    ProductOrder:
-      local: id
-      foreign: product_id
-      type: many
-    ProductSpec:
-      local: id
-      foreign: product_id
-      type: many
 ProductCategory:
   connection: doctrine
   tableName: product_category
@@ -711,7 +724,7 @@ ProductCategory:
       notnull: true
       autoincrement: false
     has_leasing:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false
@@ -744,211 +757,6 @@ ProductCategory:
       local: id
       foreign: category_id
       type: many
-ProductModel:
-  connection: doctrine
-  tableName: product_model
-  columns:
-    id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    product_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    name:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    name_en:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    sort:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
-  relations:
-    Product:
-      local: product_id
-      foreign: id
-      type: one
-ProductOrder:
-  connection: doctrine
-  tableName: product_order
-  columns:
-    id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    product_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    name:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    email:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    phone:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    message:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    organization:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    position:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    Product:
-      local: product_id
-      foreign: id
-      type: one
-ProductSpec:
-  connection: doctrine
-  tableName: product_spec
-  columns:
-    id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    product_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    model_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    spec_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    sort:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    body:
-      type: string(2000)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    body_en:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
-  relations:
-    Product:
-      local: product_id
-      foreign: id
-      type: one
-    Spec:
-      local: spec_id
-      foreign: id
-      type: one
 Service:
   connection: doctrine
   tableName: service
@@ -1029,57 +837,6 @@ Service:
       primary: false
       notnull: true
       autoincrement: false
-Spec:
-  connection: doctrine
-  tableName: spec
-  columns:
-    id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    name:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    name_en:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    sort:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
-  relations:
-    ProductSpec:
-      local: id
-      foreign: spec_id
-      type: many
 User:
   connection: doctrine
   tableName: user
@@ -1112,7 +869,7 @@ User:
       notnull: true
       autoincrement: false
     is_active:
-      type: boolean
+      type: integer(1)
       fixed: false
       unsigned: false
       primary: false

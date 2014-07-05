@@ -45,7 +45,9 @@
     <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>
     <br clear="all">
     <div>
-        
+        <div class="left" style="width:260px;height:260px;margin:0 10px 10px 0;padding:0;background:#F3F3F3;">
+            <?php echo image_tag('', array())?>
+        </div>
     </div>
     <br clear="all">
 </div>
