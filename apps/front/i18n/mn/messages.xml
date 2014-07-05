@@ -5,40 +5,32 @@
     <header/>
     <body>
       <trans-unit>
-        <source>Construction equipments trade, rent and leasing</source>
-        <target>Барилгын тоног төхөөрөмжийн худалдаа түрээс лийзинг</target>
+        <source>Brief intro</source>
+        <target>Товч танилцуулга</target>
       </trans-unit>
       <trans-unit>
-        <source>Home</source>
-        <target>Нүүр</target>
+        <source>Products and services</source>
+        <target>Бүтээгдэхүүн үйлчилгээ</target>
       </trans-unit>
       <trans-unit>
-        <source>About Us</source>
-        <target>Бидний тухай</target>
+        <source>Works we did</source>
+        <target>Хийж гүйцэтгэсэн ажлууд</target>
       </trans-unit>
       <trans-unit>
-        <source>Products</source>
-        <target>Бүтээгдэхүүн</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Product</source>
-        <target>Бүтээгдэхүүн</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Service</source>
-        <target>Үйлчилгээ</target>
+        <source>Our clients</source>
+        <target>Харилцагч байгууллагууд</target>
       </trans-unit>
       <trans-unit>
         <source>Contact</source>
         <target>Холбоо барих</target>
       </trans-unit>
       <trans-unit>
-        <source>Featured news</source>
-        <target>Онцлох мэдээ</target>
+        <source>Contact us</source>
+        <target>Холбоо барих</target>
       </trans-unit>
       <trans-unit>
-        <source>News</source>
-        <target>Мэдээ мэдээлэл</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
         <source>Fax</source>
@@ -65,32 +57,32 @@
         <target>Хаяг, байршил</target>
       </trans-unit>
       <trans-unit>
-        <source>Image gallery</source>
-        <target>Зургийн цомог</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
         <source>More</source>
         <target>Дэлгэрэнгүй</target>
       </trans-unit>
       <trans-unit>
-        <source>No products in this category.</source>
-        <target>Энэ ангилалд бүтээгдэхүүн оруулаагүй байна.</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Vote</source>
-        <target>Санал өгөх</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>All news</source>
-        <target>Бүх мэдээ</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Poll</source>
-        <target>Санал асуулга</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>ALL</source>
-        <target>БҮГД</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
         <source>Your name</source>
@@ -145,18 +137,17 @@
         <target>Зочин</target>
       </trans-unit>
       <trans-unit>
-        <source>back to news list</source>
-        <target>мэдээний жагсаалтруу буцах</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>About Company</source>
-        <target>Бидний тухай</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>LAST COMMENTS</source>
-        <target>Сүүлийн сэтгэгдлүүд</target>
-      </trans-unit>      
-      
+        <source></source>
+        <target></target>
+      </trans-unit>     
       <trans-unit>
         <source>Ulaanbaatar city</source>
         <target>Улаанбаатар хот</target>
@@ -166,64 +157,40 @@
         <target>Монгол улс</target>
       </trans-unit>
       <trans-unit>
-        <source>BOOKING</source>
-        <target>БҮТЭЭГДХҮҮН ЗАХИАЛГА</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>WATCH THE MOVIE</source>
-        <target>ТАНИЛЦУУЛГА ВИДЕО ҮЗЭХ</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>TECHNICAL INFO</source>
-        <target>ТЕХНИКИЙН ҮЗҮҮЛЭЛТ</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Name</source>
-        <target>Нэр</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Cod</source>
-        <target>Код</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Rent</source>
-        <target>Түрээс</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Sort by</source>
-        <target>Эрэмбэлэх</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Gypsum board</source>
-        <target>Гипсэн хавтан</target>
+        <source></source>
+        <target></target>
       </trans-unit>
       <trans-unit>
-        <source>Join us</source>
-        <target>Бидэнтэй нэгдэх</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Position</source>
-        <target>Албан тушаал</target>
-      </trans-unit>
-      <trans-unit>
-        <source>fields are mandatory</source>
-        <target>талбарыг заавал бөглөнө</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Send an invoice</source>
-        <target>Үнийн санал авах</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Email successfully sent.</source>
-        <target>Таны зурвасыг амжилттай илгээлээ.</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Required</source>
-        <target>Утга оруулна уу</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Rental cost calculation</source>
-        <target>Түрээсийн үнэ тооцоолох</target>
+        <source></source>
+        <target></target>
       </trans-unit>
     </body>
   </file>
