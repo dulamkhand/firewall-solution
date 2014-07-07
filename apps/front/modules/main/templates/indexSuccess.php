@@ -30,9 +30,9 @@
 
 <div class="page bg-dark-blue">
 <div class="wrapper">
-    <h2><?php echo __('Products and services')?></h2>
-    <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>
-    <br clear="all">
+    <h2 style="border-bottom:1px solid #dedede;padding-bottom:16px;margin-bottom:14px;">
+        <?php echo __('Products and services')?>
+    </h2>
     <?php include_partial('main/service', array());?>
 </div>
 </div>

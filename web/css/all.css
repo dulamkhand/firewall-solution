@@ -7,7 +7,7 @@ body{background:url("../images/bg-slash.png") repeat;}
 .wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
 #header{clear:both;height:62px;position:relative;text-align:center;top:34px;z-index:350;}
 #header #menu{background:url("../images/menu.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-              height:62px;line-height:62px;position:absolute;left:0;width:1090px;}
+  height:62px;line-height:62px;position:absolute;left:0;width:1090px;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
@@ -69,7 +69,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 
 /**************************************************************************************************************/
 .home-box {background:url("../images/homebox.png") no-repeat scroll left top rgba(0, 0, 0, 0);
-    float:left;height:141px;margin:0 10px 0 0;position:relative;vertical-align:top;width:310px;}
+float:left;height:141px;margin:0 10px 0 0;position:relative;vertical-align:top;width:310px;}
 .home-box a {display:block;height:120px;padding:10px;position:relative;text-decoration:none;}
 
 .mission-text-section{}
@@ -97,8 +97,8 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 
 
 .page{position:relative;display:block;min-height:700px;width:100%;padding:40px 20px;}
-.page h2 {color:#fff;font-size:41px;font-weight:900;letter-spacing:-1px;line-height:50px;
-          margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:Oswald;}
+.page h2 {color:#fff;font-size:40px;font-weight:900;letter-spacing:-1px;line-height:50px;
+  margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:Open Sans Condensed;}
 .bg-blue{background:url("../images/bg-blue.png") repeat;}
 .bg-dark-blue{background:url("../images/bg-dark-blue.png") repeat;}
 /*.bg-gray{background:url("../images/bg-gray.png") repeat;}*/
@@ -107,5 +107,17 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 .bg-black{background:url("../images/bg-black.png") repeat;}
 .bg-slash{background:url("../images/bg-slash.png") repeat;}
 .bg-white{background:#fff;}
-.bg-orange{background:#F26222;}          
+.bg-orange{background:#F26222;}  
 
+.jobs-box{float:left;height:450px;margin:0 13px 13px 0;padding:0;background:#F3F3F3;border:1px solid #bbb;box-shadow:0 2px 3px 0px rgb(194,192,188);}
+.jobs-box h3{padding:20px 20px 10px 20px;color:#555;font-size:26px;letter-spacing:-1px;
+ font-family:Open Sans Condensed;font-weight:normal;}
+.jobs-box span{padding:10px 20px;color:#888;font-size:14px;font-family:Open Sans Condensed;font-weight:normal;}
+
+
+ul#service{}
+ul#service li{float:left;width:172px;}
+ul#service li .icon_service{height:95px;margin:0 auto 6px;width:95px;}
+ul#service li h3{color:#b25538;font-size:18px;margin-bottom:25px;}
+ul#service li ul.list_nested{border-top:1px solid #c2c0bc;clear:both;color:#3a3532;float:left;
+                             font-size:14px;line-height:2.4;min-width:100%;padding:0 10px;text-align:left;}
