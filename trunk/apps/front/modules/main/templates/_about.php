@@ -1,13 +1,17 @@
-<div class="box" style="width:350px;padding:5px;height:306px;">
-		<?php //echo image_tag('/u/page/t350-'.$page->getImage(), array('width'=>350))?>    
+<div class="left" style="width:400px;padding:6px;height:300px;background:#dedede;
+border:1px solid #aaa;border-radius:4px;margin:17px 20px 0 0;">
+		<?php echo image_tag('tmp/ip-camera-decoder.jpg', array('width'=>400))?>    
 </div>
-<div class="box" style="width:554px;text-align:justify;">
-		<h5><?php //echo $page?></h5>
-    <?php //echo GlobalLib::clearOutput($page->getContentCulture())?>
+<div class="left" style="width:550px;text-align:justify;color:#fff;margin:0;">
+		<h2><?php echo __('')?></h2>
+		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
+		
+		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
+		
+		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
 </div>
 <br clear="all">
-
-<style>
-	.box p {font-size:14px;font-family:Arial,Helvetica,sans-serif;}
-</style>
 
