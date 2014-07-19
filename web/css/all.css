@@ -1,7 +1,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,
 b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,
-hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Tahoma,sans-serif;font-size:12px;
-line-height:24px;position:relative;color:#333;margin:0;padding:0;border:0;outline:0;background:transparent;}
+hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Open Sans Condensed;font-size:20px;
+line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outline:0;background:transparent;}
 
 body{background:url("../images/bg-slash.png") repeat;}
 .wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
@@ -11,7 +11,8 @@ body{background:url("../images/bg-slash.png") repeat;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
-#header #menu ul li a{float:left;font-weight:bold;margin:15px 20px;color:#000;text-decoration:none;}
+#header #menu ul li a{float:left;font-weight:bold;margin:15px 22px;color:#000;
+                      text-decoration:none;font-family:Open Sans Condensed;font-size:13px;}
 #header #menu ul li.current a{color:#0089b9;}
 
 #footer{border-top:1px solid #ccc;padding:10px 0;}
@@ -29,9 +30,9 @@ body{background:url("../images/bg-slash.png") repeat;}
 border:0;width:92px;height:22px;color:#fff;padding:0 0 0 13px;}
 #search .button{position:absolute;left:100px;top:-1px;background:url(../images/search-b.png) no-repeat;width:61px;height:22px;}
 
-h2{font-size:16px;font-weight:normal;color:#0089B8;line-height:26px;text-transform:uppercase;text-decoration:none;margin:0 0 5px 0;font-family:"gesta",sans-serif;letter-spacing:-1px;}
+h2{font-size:16px;font-weight:normal;color:#0089B8;line-height:26px;text-transform:uppercase;text-decoration:none;margin:0 0 5px 0;font-family:Open Sans Condensed;letter-spacing:-1px;}
 h3{font-size:12px;font-weight:bold;color:#333;line-height:20px;text-transform:none;text-decoration:none;}
-h4{font-size:15px;font-weight:bold;color:#fff;line-height:20px;text-transform:uppercase;text-decoration:none;font-family:open sans condensed}
+h4{font-size:15px;font-weight:bold;color:#fff;line-height:20px;text-transform:uppercase;text-decoration:none;font-family:Open Sans Condensed;}
 h5{font-size:20px;font-family:roboto condensed;color:#177B01;text-transform:uppercase;letter-spacing:-1px;line-height:26px;margin:0 0 10px 0;}
 
 table {border-collapse:collapse;border-spacing:0;}
@@ -115,9 +116,14 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 .jobs-box span{padding:10px 20px;color:#888;font-size:14px;font-family:Open Sans Condensed;font-weight:normal;}
 
 
-ul#service{}
-ul#service li{float:left;width:172px;}
-ul#service li .icon_service{height:95px;margin:0 auto 6px;width:95px;}
-ul#service li h3{color:#b25538;font-size:18px;margin-bottom:25px;}
-ul#service li ul.list_nested{border-top:1px solid #c2c0bc;clear:both;color:#3a3532;float:left;
-                             font-size:14px;line-height:2.4;min-width:100%;padding:0 10px;text-align:left;}
+ul#service{margin:0 auto;width:1000px;}
+ul#service li{float:left;width:250px;color:#fff;}
+ul#service li .icon_service{height:95px;margin:0 auto 15px;width:95px;}
+ul#service li h3{color:#fff;font-size:20px;margin-bottom:20px;text-align:center;
+                 font-family:Open Sans Condensed;}
+ul#service li ul.list_nested{border-top:1px solid #dedede;color:#fff;float:left;
+                             padding:15px 0 0 80px;text-align:left;}
+                             
+#floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
+         color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
+         border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}

@@ -1,11 +1,17 @@
 <div id="header">
+<div id="floater">
+      (+976) 99029764, &nbsp; (+976) 99258807 &nbsp; &nbsp; | &nbsp; &nbsp; 
+      <a href="mailto:firewallsolution.llc@gmail.com" style="text-decoration:none;color:#777;font-size:16px;">
+            firewallsolution.llc@gmail.com</a>
+</div>
+
 <div class="wrapper">
 <div id="menu">
     <?php $action = $sf_request->getParameter('action')?>
     <ul>
         <li>
            <a href="<?php echo url_for('@homepage')?>" style="margin:0;">
-              <?php echo image_tag('logo-tr.png', array('style'=>'float:left;margin:-32px 0 0 5px;'))?>
+              <?php echo image_tag('logo-tr.png', array('style'=>'float:left;margin:-32px 15px 0 5px;'))?>
           </a>
         </li>
         <li class="<?php if($action == 'about') echo 'current'?>">

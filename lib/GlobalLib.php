@@ -29,6 +29,17 @@ class GlobalLib
 
   /****************************************************************/
 
+  static public function slugify($text)
+  {
+      // replace all non letters or digits by -
+      $text = preg_replace('/\W+/', '-', $text);
+   
+      // trim and lowercase
+      $text = strtolower(trim($text, '-'));
+   
+      return $text;
+  }
+  
   public static function utf8_substr($str,$from,$len) {
     # utf8 substr
     $str = preg_replace('#^(?:[\x00-\x7F]|[\xC0-\xFF][\x80-\xBF]+){0,'.$from.'}'.
@@ -112,7 +123,7 @@ class GlobalLib
 
   public static function clearOutput($text)
   {
-    return nl2br(htmlspecialchars_decode(strip_tags($text, '<strong><b><i><em><u><sup><sub><ol><ul><li><a><img><embed><object>')));
+      return nl2br(htmlspecialchars_decode(strip_tags($text, '<strong><b><i><em><u><sup><sub><ol><ul><li><a><img><embed><object>')));
   }
 
   public static function clearInput($text)
