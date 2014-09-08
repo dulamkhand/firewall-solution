@@ -6,6 +6,7 @@
     <?php include_title() ?>
     <?php $host = sfConfig::get('app_host')?>
     <link rel="shortcut icon" href="/images/favicon.png" />
+	
   
     <!--jquery-->
     <!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
