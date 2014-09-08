@@ -2,18 +2,24 @@
 <div class="wrapper">
     <?php include_partial("content/slider", array());?>
 
-    <div style="margin-left:25px;background:url(http://static.gateway.com/up/Resource/Gateway/Home/Highlights/20110528/aboutus_highlight_en.png)" class="home-box">
+    <div style="margin-left:22px;background:rgba(0, 0, 0, 0.2);" class="home-box">
     		<a href="#">
+				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('Security camera')?></h2>
+				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>
     		</a>
     </div>
     
-    <div style="background:url(http://static.gateway.com/up/Resource/Gateway/Home/Highlights/20110528/aboutus_highlight_en.png)" class="home-box">
+    <div style="background:rgba(0, 0, 0, 0.2);" class="home-box">
     		<a href="#">
+				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('LAN')?></h2>
+				<?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
     		</a>
     </div>
     
-    <div style="margin-right:0px;background:url(http://static.gateway.com/up/Resource/Gateway/Home/Highlights/20110528/aboutus_highlight_en.png)" class="home-box">
+    <div style="margin-right:0px;background:rgba(0, 0, 0, 0.2);" class="home-box">
     		<a href="#">
+				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('Sound system')?></h2>
+				<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
     		</a>
     </div>
 </div>
@@ -30,6 +36,24 @@
 <div class="wrapper">
     <h2 style="border-bottom:1px solid #dedede;padding-bottom:16px;margin-bottom:14px;">
         <?php echo __('Products and services')?>
+    </h2>
+    <?php include_partial('main/service', array());?>
+</div>
+</div>
+
+<div class="page bg-yellow" style="height:1100px;">
+<div class="wrapper">
+    <h2 style="border-bottom:1px solid #003366;padding-bottom:16px;margin-bottom:14px;color:#003366;">
+        <?php echo __('Security cameras')?>
+    </h2>
+    <?php include_partial('main/camera', array());?>
+</div>
+</div>
+
+<div class="page bg-dark-blue">
+<div class="wrapper">
+    <h2 style="border-bottom:1px solid #dedede;padding-bottom:16px;margin-bottom:14px;">
+        <?php echo __('LAN, WAN, Network equipments and Sound system')?>
     </h2>
     <?php include_partial('main/service', array());?>
 </div>

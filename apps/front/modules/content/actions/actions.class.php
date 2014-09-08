@@ -189,5 +189,9 @@ class contentActions extends sfActions
 	      return $form;
 	  }
 	  
-  
+	  public function executeBroshure(sfWebRequest $request)
+	  {
+			$this->setLayout("broshure");
+	  }
+	  
 }

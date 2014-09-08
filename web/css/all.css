@@ -69,7 +69,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 
 
 /**************************************************************************************************************/
-.home-box {background:url("../images/homebox.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+.home-box {background:rgba(0, 0, 0, 0.2);border-radius:6px; 
 float:left;height:141px;margin:0 10px 0 0;position:relative;vertical-align:top;width:310px;}
 .home-box a {display:block;height:120px;padding:10px;position:relative;text-decoration:none;}
 
@@ -107,6 +107,7 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 .bg-dark-gray{background:url("../images/bg-dark-gray.png") repeat;}
 .bg-black{background:url("../images/bg-black.png") repeat;}
 .bg-slash{background:url("../images/bg-slash.png") repeat;}
+.bg-yellow{background:url("../images/bg-yellow.png") repeat;}
 .bg-white{background:#fff;}
 .bg-orange{background:#F26222;}  
 
