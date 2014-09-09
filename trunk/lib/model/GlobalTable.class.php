@@ -80,6 +80,9 @@ class GlobalTable extends Doctrine_Table
         if(isset($params['idsO']) && sizeof($params['idsO']))
             $q->andWhereNotIn('id', $params['idsO']);
             
+        if(isset($params['email']) && $params['email'] != null)
+            $q->andWhere('email= ?', $params['email']);
+            
         # route
         if(isset($params['route']) && $params['route'] != null)
             $q->andWhere('route= ?', $params['route']);

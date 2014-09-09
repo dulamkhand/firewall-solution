@@ -6,7 +6,6 @@
     <?php endforeach;?>
   </ul>
 </div><!--flexslider-->
-<br clear="all">
 
 <script type="text/javascript">
 $(window).load(function() {
