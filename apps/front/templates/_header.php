@@ -11,7 +11,7 @@
     <ul>
         <li>
            <a href="<?php echo url_for('@homepage')?>" style="margin:0;">
-              <?php echo image_tag('logo-tr.png', array('style'=>'float:left;margin:-32px 15px 0 5px;'))?>
+              <?php echo image_tag('logo-tr.png', array('style'=>'float:left;margin:-32px 15px 0 -12px;'))?>
           </a>
         </li>
         <li class="<?php if($action == 'about') echo 'current'?>">
