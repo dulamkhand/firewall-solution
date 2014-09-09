@@ -5,9 +5,9 @@ line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outlin
 
 body{background:url("../images/bg-slash.png") repeat;}
 .wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
-#header{clear:both;height:62px;position:relative;text-align:center;top:34px;z-index:350;}
+#header{clear:both;height:80px;position:relative;text-align:center;top:34px;z-index:350;}
 #header #menu{background:url("../images/menu.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-  height:62px;line-height:62px;position:absolute;left:0;width:1090px;}
+  height:62px;line-height:62px;position:absolute;left:0;width:1050px;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
@@ -69,8 +69,8 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 
 
 /**************************************************************************************************************/
-.home-box {background:rgba(0, 0, 0, 0.2);border-radius:6px; 
-float:left;height:141px;margin:0 10px 0 0;position:relative;vertical-align:top;width:310px;}
+.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
+           margin:0 15px 0 0;position:relative;vertical-align:top;}
 .home-box a {display:block;height:120px;padding:10px;position:relative;text-decoration:none;}
 
 .mission-text-section{}
@@ -96,11 +96,11 @@ ul.contactus li a .link {color:#177B01;text-transform:uppercase;}
 ul.contactus li:hover a .link{text-decoration:underline;}
 
 
-
-.page{position:relative;display:block;min-height:700px;width:100%;padding:40px 20px;}
-.page h2 {color:#fff;font-size:40px;font-weight:900;letter-spacing:-1px;line-height:50px;
+.page{position:relative;display:block;min-height:655px;width:100%;padding:25px 0;}
+.page h2 {color:#fff;font-size:40px;font-weight:900;letter-spacing:-1px;line-height:40px;
   margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:Open Sans Condensed;}
 .bg-blue{background:url("../images/bg-blue.png") repeat;}
+.bg-bluenew{background:url("../images/bg-blue2.jpg") repeat scroll -137px 0 rgba(0, 0, 0, 0.2);}
 .bg-dark-blue{background:url("../images/bg-dark-blue.png") repeat;}
 /*.bg-gray{background:url("../images/bg-gray.png") repeat;}*/
 .bg-gray{background:#e6e6e6;}
@@ -117,13 +117,10 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 .jobs-box span{padding:10px 20px;color:#888;font-size:14px;font-family:Open Sans Condensed;font-weight:normal;}
 
 
-ul#service{margin:0 auto;width:1000px;}
-ul#service li{float:left;width:250px;color:#fff;}
-ul#service li .icon_service{height:95px;margin:0 auto 15px;width:95px;}
-ul#service li h3{color:#fff;font-size:20px;margin-bottom:20px;text-align:center;
-                 font-family:Open Sans Condensed;}
-ul#service li ul.list_nested{border-top:1px solid #dedede;color:#fff;float:left;
-                             padding:15px 0 0 80px;text-align:left;}
+ul#service{margin:0 auto;width:250px;border-left:1px solid #0089b9;padding:0 0 0 40px;float:right;}
+ul#service li{color:#fff;float:left;}
+ul#service li h3{color:#fff;font-size:20px;}
+ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align:left;}
                              
 #floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
          color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;

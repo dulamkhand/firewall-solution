@@ -65,24 +65,24 @@
         <target>Дэлгэрэнгүй</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>Security camera</source>
+        <target>Хяналтын камер</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>LAN</source>
+        <target>LAN</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>Sound system</source>
+        <target>Дууны систем</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>Package 1</source>
+        <target>Багц 1</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>Package 2</source>
+        <target>Багц 2</target>
       </trans-unit>
       <trans-unit>
         <source>Your name</source>

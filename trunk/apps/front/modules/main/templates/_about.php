@@ -1,17 +1,33 @@
-<div class="left" style="width:400px;padding:6px;height:300px;background:#dedede;
-border:1px solid #aaa;border-radius:4px;margin:17px 20px 0 0;">
-		<?php echo image_tag('tmp/ip-camera-decoder.jpg', array('width'=>400))?>    
-</div>
-<div class="left" style="width:550px;text-align:justify;color:#fff;margin:0;">
-		<h2><?php echo __('')?></h2>
-		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
-		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
-		
-		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
-		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
-		
-		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
-		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
-</div>
-<br clear="all">
+<div class="left" style="width:670px;padding:0;">
+    
+    <div class="left" style="width:480px;text-align:justify;color:#fff;margin:0 40px 0 0;">
+    		<span class="bold fff"><?php echo __('Our idea')?>: </span><br>
+    		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+    		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан юм. 
+    </div>
+    <?php echo image_tag('logo-120.png', array('style'=>'border-radius:130px;float:left;border:6px solid #51AEFF;'))?>
+    
+    <br clear="all">
+    <br clear="all">
+    <br clear="all">
+    
+    <?php echo image_tag('team.jpg', array('style'=>'float:left;border:6px solid #369CF6;margin:8px 0 0 0;'))?>
+    <div class="left" style="width:260px;text-align:justify;color:#fff;margin:0 0 0 40px;">
+    		<span class="bold fff"><?php echo __('Our team')?>: </span><br>
+    		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+    		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн юм. 
+    </div>
+    
+    <br clear="all">
+    <br clear="all">
+    <br clear="all">
+    
+    <div class="left" style="width:480px;text-align:justify;color:#fff;margin:0 40px 0 0;">
+    		<span class="bold fff"><?php echo __('Our story')?>: </span><br>
+    		Галтхана солюшн ХХК 2012 онд байгуулагдсанаас хойш олон төрлийн бүтээгдэхүүн 
+    		үйлчилгээг чанартай гүйцэтгэн хэрэглэгчдийн найдварыг хүлээсэн байгууллага болж чадсан. 
+    		<br clear="all">		
+    </div>
+    <?php echo image_tag('logo-120.png', array('style'=>'border-radius:130px;float:left;border:6px solid #369CF6;'))?>
 
+</div>
