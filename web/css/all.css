@@ -1,6 +1,6 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,
 b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,
-hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Open Sans Condensed;font-size:20px;
+hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Tahoma;font-size:16px;
 line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outline:0;background:transparent;}
 
 body{background:url("../images/bg-slash.png") repeat;}
@@ -11,8 +11,7 @@ body{background:url("../images/bg-slash.png") repeat;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
-#header #menu ul li a{float:left;font-weight:bold;margin:15px 22px;color:#000;
-                      text-decoration:none;font-family:Open Sans Condensed;font-size:13px;}
+#header #menu ul li a{float:left;font-weight:bold;margin:14px 10px;text-decoration:none;font-size:13px;}
 #header #menu ul li.current a{color:#0089b9;}
 
 #footer{border-top:1px solid #ccc;padding:10px 0;}
@@ -29,11 +28,6 @@ body{background:url("../images/bg-slash.png") repeat;}
 #search .input{position:absolute;left:0;top:0;z-index:100;background:url(../images/search-i.png) no-repeat;
 border:0;width:92px;height:22px;color:#fff;padding:0 0 0 13px;}
 #search .button{position:absolute;left:100px;top:-1px;background:url(../images/search-b.png) no-repeat;width:61px;height:22px;}
-
-h2{font-size:16px;font-weight:normal;color:#0089B8;line-height:26px;text-transform:uppercase;text-decoration:none;margin:0 0 5px 0;font-family:Open Sans Condensed;letter-spacing:-1px;}
-h3{font-size:12px;font-weight:bold;color:#333;line-height:20px;text-transform:none;text-decoration:none;}
-h4{font-size:15px;font-weight:bold;color:#fff;line-height:20px;text-transform:uppercase;text-decoration:none;font-family:Open Sans Condensed;}
-h5{font-size:20px;font-family:roboto condensed;color:#177B01;text-transform:uppercase;letter-spacing:-1px;line-height:26px;margin:0 0 10px 0;}
 
 table {border-collapse:collapse;border-spacing:0;}
 table tr th, td{text-align:left;padding:0;border:0px solid red;}
@@ -69,10 +63,6 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 
 
 /**************************************************************************************************************/
-.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
-           margin:0 15px 0 0;position:relative;vertical-align:top;}
-.home-box a {display:block;height:120px;padding:10px;position:relative;text-decoration:none;}
-
 .mission-text-section{}
 
 ul#why-choose-us {}
@@ -97,7 +87,7 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 
 
 .page{position:relative;display:block;min-height:655px;width:100%;padding:25px 0;}
-.page h2 {color:#fff;font-size:40px;font-weight:900;letter-spacing:-1px;line-height:40px;
+.page h2 {color:#fff;font-size:30px;font-weight:900;letter-spacing:-1px;line-height:40px;text-transform:uppercase;
   margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:Open Sans Condensed;}
 .bg-blue{background:url("../images/bg-blue.png") repeat;}
 .bg-bluenew{background:url("../images/bg-blue2.jpg") repeat scroll -137px 0 rgba(0, 0, 0, 0.2);}
@@ -119,9 +109,16 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 
 ul#service{margin:0 auto;width:250px;border-left:1px solid #0089b9;padding:0 0 0 40px;float:right;}
 ul#service li{color:#fff;float:left;}
-ul#service li h3{color:#fff;font-size:20px;}
+ul#service li h3{color:#fff;}
 ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align:left;}
                              
 #floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
          color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
          border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}
+         
+         
+.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
+           margin:0 15px 0 0;position:relative;vertical-align:top;}
+.home-box h2 {font-size:24px!important;line-height:25px!important;font-family:Tahoma;}
+.home-box ul.list {float:left;margin:0 0 0 10px;}
+.home-box ul.list li{float:left;font-size:12px;color:#333;line-height:14px;font-weight:bold;}

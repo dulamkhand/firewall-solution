@@ -15,7 +15,7 @@
           </a>
         </li>
         <li class="<?php if($action == 'about') echo 'current'?>">
-           <a href="<?php echo url_for('main/about')?>"><?php echo __('Brief intro')?></a>
+           <a href="<?php echo url_for('main/about')?>"><?php echo __('Firewall Solution LLC')?></a>
         </li>
         <li class="separator"></li>
         <li class="<?php if(in_array($action, array('products', 'productShow'))) echo 'current'?>">

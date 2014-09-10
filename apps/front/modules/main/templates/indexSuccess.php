@@ -1,31 +1,49 @@
 <div class="page">
 <div class="wrapper">
     <?php include_partial("content/slider", array());?>
-    
-    <div style="background:rgba(0, 0, 0, 0.2);" class="home-box">
+    <div class="home-box">
     		<a href="#">
-				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('Security camera')?></h2>
-				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>
+      		  <div class="left" style="width:150px;margin:15px 0 0 15px;">
+      		      <h2><?php echo __('Security camera')?></h2>
+        				<ul class="list">
+          				  <li><?php echo __('Албан газар байгууллага')?></li>
+          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+        				</ul>
+      		  </div>
+    				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>				
     		</a>
     </div>
-    
-    <div style="background:rgba(0, 0, 0, 0.2);" class="home-box">
+    <div class="home-box">
     		<a href="#">
-				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('LAN')?></h2>
-				<?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
+    		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
+        				<h2><?php echo __('LAN')?></h2>
+        				<ul class="list">
+          				  <li><?php echo __('Албан газар байгууллага')?></li>
+          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+        				</ul>
+            </div>
+            <?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
     		</a>
     </div>
-    
-    <div style="margin-right:0px;background:rgba(0, 0, 0, 0.2);" class="home-box">
+    <div style="margin-right:0px;" class="home-box">
     		<a href="#">
-				<h2 style="font-size:32px;line-height:40px;width:80px;float:left;"><?php echo __('Sound system')?></h2>
-				<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
+    		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
+		            <h2><?php echo __('Sound system')?></h2>
+		            <ul class="list">
+          				  <li><?php echo __('Албан газар байгууллага')?></li>
+          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+        				</ul>
+    		    </div>
+	   	   		<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
     		</a>
     </div>
 </div>
 </div>
 
-<div class="page bg-bluenew" style="min-height:;">
+<div class="page bg-bluenew" style="min-height:700px;">
 <div class="wrapper">
     <h2 style="border-bottom:1px solid #51AEFF;padding-bottom:16px;margin-bottom:40px;">
     <?php echo __('Brief intro')?></h2>
@@ -36,7 +54,7 @@
 
 <div class="page bg-dark-gray" style="height:1100px;">
 <div class="wrapper">
-    <h2 style="border-bottom:1px solid #006ED0;padding-bottom:16px;margin-bottom:14px;color:#006ED0;">
+    <h2 style="color:#006ED0;">
         <?php echo __('Security camera')?>
     </h2>
     <?php include_partial('main/camera', array());?>
@@ -80,4 +98,3 @@
     <?php include_partial('main/contact', array('textColor'=>'#333', 'lineColor'=>'#dedede', 'width'=>400));?>
 </div>
 </div>
-
