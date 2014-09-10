@@ -1,6 +1,6 @@
 <ul id="service">
-		<li class="column_nested fourth" id="strategy">
-  			<h3>Техник хангамж</h3>
+		<li>
+  			<span class="bold fff">Техник хангамж</span>
   			<ul class="list_nested">
     				<li>Хяналтын камер</li>
     				<li>Дууны систем</li>
@@ -11,8 +11,8 @@
     				<li></li>
   			</ul>
 		</li>
-		<li class="column_nested fourth odd" id="creative">
-  			<h3>Програм хангамж</h3>
+		<li>
+  			<span class="bold fff">Програм хангамж</span>
   			<ul class="list_nested">
     				<li>Комьюьерын засвар</li>
     				<li>Програм инстол</li>
@@ -21,8 +21,8 @@
     				<li></li>
   			</ul>
 		</li>
-		<li class="column_nested fourth" id="development">
-  			<h3>Вэб хөгжүүлэлт</h3>
+		<li>
+  			<span class="bold fff">Вэб хөгжүүлэлт</span>
   			<ul class="list_nested">
     				<li>Варез</li>
     				<li>Олон нийтийн сүлэжж</li>
@@ -31,8 +31,8 @@
     				<li>Мэдээ мэдээллийн вэб</li>
   			</ul>
 		</li>
-		<li class="column_nested fourth odd" id="production">
-  			<h3>Сургалт</h3>
+		<li>
+  			<span class="bold fff">Сургалт</span>
   			<ul class="list_nested">
     				<li></li>
     				<li>Програмчлалын хэлний сургалт</li>
