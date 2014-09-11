@@ -1,6 +1,6 @@
 <div class="right" style="width:<?php echo $width?>px;border-left:1px solid <?php echo $lineColor?>;padding:0 0 0 40px;">
 
-    <script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCCai3UpfJoxQUYLs7rE_CcSHM8pVBDPqM" type="text/javascript"></script>
+    <!--<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCCai3UpfJoxQUYLs7rE_CcSHM8pVBDPqM" type="text/javascript"></script>-->
     <?php use_javascript('jQuery.bMap.1.2.3.js');?>
     <script type="text/javascript">
       $(document).ready(function() {
