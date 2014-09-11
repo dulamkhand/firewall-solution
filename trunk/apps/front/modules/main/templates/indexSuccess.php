@@ -6,9 +6,9 @@
       		  <div class="left" style="width:150px;margin:15px 0 0 15px;">
       		      <h2><?php echo __('Security camera')?></h2>
         				<ul class="list">
-          				  <li><?php echo __('Албан газар байгууллага')?></li>
-          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+          				  <li> - <?php echo __('Албан газар байгууллага')?></li>
+          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
         				</ul>
       		  </div>
     				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>				
@@ -19,9 +19,9 @@
     		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
         				<h2><?php echo __('LAN')?></h2>
         				<ul class="list">
-          				  <li><?php echo __('Албан газар байгууллага')?></li>
-          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+          				  <li> - <?php echo __('Дотоод сүлжээ')?></li>
+          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
         				</ul>
             </div>
             <?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
@@ -32,9 +32,9 @@
     		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
 		            <h2><?php echo __('Sound system')?></h2>
 		            <ul class="list">
-          				  <li><?php echo __('Албан газар байгууллага')?></li>
-          				  <li><?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li><?php echo __('Сургууль цэцэрлэг')?></li>
+          				  <li> - <?php echo __('Албан газар байгууллага')?></li>
+          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
+          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
         				</ul>
     		    </div>
 	   	   		<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
