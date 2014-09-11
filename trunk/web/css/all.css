@@ -122,3 +122,6 @@ ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align
 .home-box h2 {font-size:24px!important;line-height:25px!important;font-family:Tahoma;}
 .home-box ul.list {float:left;margin:0 0 0 10px;}
 .home-box ul.list li{float:left;font-size:12px;color:#333;line-height:14px;font-weight:bold;}
+
+.camera-box{box-shadow:0 3px 8px rgba(0,0,0, 0.2);width:315px;height:315px;margin:0 13px 13px 0;padding:0;
+            background:#fff;}
