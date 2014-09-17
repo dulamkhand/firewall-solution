@@ -5,7 +5,7 @@ line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outlin
 
 body{background:url("../images/bg-slash.png") repeat;}
 .wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
-#header{clear:both;height:80px;position:relative;text-align:center;top:34px;z-index:350;}
+#header{clear:both;height:80px;position:relative;text-align:center;top:40px;z-index:350;}
 #header #menu{background:url("../images/menu.png") no-repeat scroll center center rgba(0, 0, 0, 0);
   height:62px;line-height:62px;position:absolute;left:0;width:1050px;}
 #header #menu ul{}
@@ -67,7 +67,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 .bg-orange{background:#F26222;}  
 
 /* ---- home -------------------------------------------------------------------------------------- */
-#floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
+#floater{position:absolute;right:10px;top:-40px;border:0;background:#fff;
          color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
          border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}
          

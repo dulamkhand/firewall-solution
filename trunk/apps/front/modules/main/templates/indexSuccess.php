@@ -52,7 +52,7 @@
 </div>
 </div>
 
-<div class="page bg-dark-gray" style="height:1050px;">
+<div class="page bg-dark-gray" style="min-height:1050px;">
 <div class="wrapper">
     <h2 style="color:#006ED0;">
         <?php echo __('Products and services')?>
@@ -61,7 +61,7 @@
 </div>
 </div>
 
-<div class="page bg-orange">
+<div class="page bg-orange" style="min-height:600px;">
 <div class="wrapper">
     <h2><?php echo __('Works we did')?></h2>
     <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>
@@ -70,7 +70,7 @@
 </div>
 </div>
 
-<div class="page bg-gray">
+<div class="page bg-gray" style="min-height:600px;">
 <div class="wrapper">
     <h2 class="orange"><?php echo __('Our clients')?></h2>
     <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>

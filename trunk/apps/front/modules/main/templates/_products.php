@@ -91,7 +91,7 @@
         <br clear="all">
     </div>
   
-    <div id="tabs-2" style="width:750px;">
+    <div id="tabs-2" class="left" style="width:750px;">
         <div class="product-box">
     		    <div class="trans"><?php echo __('BLACK Indoor Varifocal 100 ft IR Day/Night Dome Camera')?></div>
             <?php echo image_tag('/u/camera/31.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
@@ -133,7 +133,7 @@
             <?php echo image_tag('/u/camera/38.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
         </div>
     </div>
-    <div id="tabs-3" style="width:750px;">
+    <div id="tabs-3" class="left" style="width:750px;">
         <div class="product-box">
     		    <div class="trans"><?php echo __('Camera 1')?></div>
             <?php echo image_tag('/u/camera/.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
