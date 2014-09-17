@@ -3,7 +3,7 @@
     <?php include_partial("content/slider", array());?>
     <div class="home-box">
     		<a href="#">
-      		  <div class="left" style="width:150px;margin:15px 0 0 15px;">
+      		  <div class="left" style="width:150px;margin:5px 0 0 10px;">
       		      <h2><?php echo __('Security camera')?></h2>
         				<ul class="list">
           				  <li> - <?php echo __('Албан газар байгууллага')?></li>
@@ -16,8 +16,8 @@
     </div>
     <div class="home-box">
     		<a href="#">
-    		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
-        				<h2><?php echo __('LAN')?></h2>
+    		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
+        				<h2><?php echo __('Local network')?></h2>
         				<ul class="list">
           				  <li> - <?php echo __('Дотоод сүлжээ')?></li>
           				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
@@ -29,7 +29,7 @@
     </div>
     <div style="margin-right:0px;" class="home-box">
     		<a href="#">
-    		    <div class="left" style="width:150px;margin:15px 0 0 15px;">
+    		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
 		            <h2><?php echo __('Sound system')?></h2>
 		            <ul class="list">
           				  <li> - <?php echo __('Албан газар байгууллага')?></li>
@@ -52,21 +52,12 @@
 </div>
 </div>
 
-<div class="page bg-dark-gray" style="height:1100px;">
+<div class="page bg-dark-gray" style="height:1050px;">
 <div class="wrapper">
     <h2 style="color:#006ED0;">
-        <?php echo __('Security camera')?>
+        <?php echo __('Products and services')?>
     </h2>
-    <?php include_partial('main/camera', array());?>
-</div>
-</div>
-
-<div class="page bg-dark-blue">
-<div class="wrapper">
-    <h2 style="border-bottom:1px solid #dedede;padding-bottom:16px;margin-bottom:14px;">
-        <?php echo __('LAN, WAN, Network equipments and Sound system')?>
-    </h2>
-    <?php include_partial('main/service', array());?>
+    <?php include_partial('main/products', array());?>
 </div>
 </div>
 
@@ -98,3 +89,4 @@
     <?php include_partial('main/contact', array('textColor'=>'#333', 'lineColor'=>'#dedede', 'width'=>400));?>
 </div>
 </div>
+

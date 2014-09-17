@@ -6,7 +6,6 @@
     <?php include_title() ?>
     <?php $host = sfConfig::get('app_host')?>
     <link rel="shortcut icon" href="/images/favicon.png" />
-	
   
     <!--jquery-->
     <!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
@@ -21,6 +20,8 @@
     
     <?php use_javascript('/addons/flexslider/jquery.flexslider-min.js');?>
     <?php use_stylesheet('/addons/flexslider/flexslider.css');?>
+    
+    <?php use_javascript('/addons/ui/jquery-ui.min.js');?>
     
   	<?php include_stylesheets() ?>
     <?php include_javascripts() ?>

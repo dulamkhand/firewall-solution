@@ -12,22 +12,12 @@ body{background:url("../images/bg-slash.png") repeat;}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
 #header #menu ul li a{float:left;font-weight:bold;margin:14px 10px;text-decoration:none;font-size:13px;}
-#header #menu ul li.current a{color:#0089b9;}
+#header #menu ul li.current a{color:#006ed0;}
 
 #footer{border-top:1px solid #ccc;padding:10px 0;}
 #footer ul li{float:left;margin:0 10px;color:#666}
 #footer ul li.sep{color:#aaa;}
 #footer ul li a{color:#666;text-decoration:none;}
-
-
-#flags{float:right;margin:25px 10px 0 0;color:#fff;}
-#flags a{float:left;margin:0 5px;color:#fff;text-decoration:none;}
-#flags span{float:left;color:#fff;}
-
-#search{position:absolute;right:0px;bottom:20px;width:170px;}
-#search .input{position:absolute;left:0;top:0;z-index:100;background:url(../images/search-i.png) no-repeat;
-border:0;width:92px;height:22px;color:#fff;padding:0 0 0 13px;}
-#search .button{position:absolute;left:100px;top:-1px;background:url(../images/search-b.png) no-repeat;width:61px;height:22px;}
 
 table {border-collapse:collapse;border-spacing:0;}
 table tr th, td{text-align:left;padding:0;border:0px solid red;}
@@ -51,40 +41,15 @@ color:#177B01;font-weight:bold;padding:10 0px;width:970px;margin:0 15px;
 
 input.field{border:1px solid #cdcdcd;margin:5px 0;width:243px;height:28px;color:#888;padding:3px 6px;border-radius:3px;}
 textarea.field{border:1px solid #cdcdcd;margin:5px 0;width:508px;height:250px;color:#888;padding:3px 6px;border-radius:3px;}
-a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-decoration:none;background:#0089b9;border-radius:3px;}
+a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-decoration:none;background:#006ed0;border-radius:3px;}
 
 .fff{color:#fff;}
 .red{color:red;}
 .gray{color:gray;}
 .bold{font-weight:bold;}
 .justify{text-align:justify;}
-.blue{color:#0089B9!important;}
+.blue{color:#006ed0!important;}
 .orange{color:#F26222!important;}
-
-
-/**************************************************************************************************************/
-.mission-text-section{}
-
-ul#why-choose-us {}
-ul#why-choose-us li{padding:0 0 0 15px;background:url(../images/i/valid.png) no-repeat;}
-
-/*********************** pager **********************/
-.pager {margin:0;padding:0;width:100%;}
-.pager a {float:left;margin:1px;padding:5px 12px;background:#04888A;border:0;color:#fff;font-weight:bold;}
-.pager a:hover {background:#fff;color:#000;border:0;}
-.pager a.selected {background:#fff;color:#000;border:0;}
-.pager .total{float:right;margin:5px 0 0 0;font-style:italic;}
-
-
-/*********************** contact us **********************/
-ul.contactus {margin:10px 0 10px 55px;padding:0;text-align:center;}
-ul.contactus li {margin:0;padding:0;float:left;width:120px;text-align:center;}
-ul.contactus li a {margin:0;font-family:'Roboto Condensed';font-size:20px;text-decoration:none;
-  text-transform:uppercase;}
-ul.contactus li a .name {color:#888;}
-ul.contactus li a .link {color:#177B01;text-transform:uppercase;}
-ul.contactus li:hover a .link{text-decoration:underline;}
-
 
 .page{position:relative;display:block;min-height:655px;width:100%;padding:25px 0;}
 .page h2 {color:#fff;font-size:30px;font-weight:900;letter-spacing:-1px;line-height:40px;text-transform:uppercase;
@@ -101,33 +66,58 @@ ul.contactus li:hover a .link{text-decoration:underline;}
 .bg-white{background:#fff;}
 .bg-orange{background:#F26222;}  
 
+/* ---- home -------------------------------------------------------------------------------------- */
+#floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
+         color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
+         border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}
+         
+.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
+           margin:0 15px 0 0;position:relative;vertical-align:top;}
+.home-box a {text-decoration:none;}
+.home-box h2 {line-height:30px!important;}
+.home-box ul.list {float:left;margin:0 0 0 10px;}
+.home-box ul.list li{float:left;font-size:12px;color:#333;line-height:14px;font-weight:bold;}
+
+/* ---- product -------------------------------------------------------------------------------------- */
+ul#product-category{width:230px;background:#fff;padding:0;margin:0 15px 0 0;float:left;}
+ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px dotted #ccc;
+                         padding:5px 20px;display:block;width:190px;}
+.product-box{box-shadow:0 3px 8px rgba(0,0,0, 0.2);width:220px;height:220px;margin:0 10px 10px 0;padding:10px;
+             background:#fff;position:relative;float:left;text-align:center;}
+.product-box h3{width:200px;margin:0;padding:2px 20px;text-transform:uppercase;
+                background:#006ED0;color:#fff;font-weight:bold;}
+.product-box .trans{width:220px;margin:0;padding:5px 10px;text-transform:;line-height:20px;font-size:13px;
+                    background:rgba(0,110,208,0.2);background:rgba(0,110,208,0.9);color:#fff;font-weight:bold;
+                    position:absolute;bottom:0;left:0;height:60px;text-align:left;line-height:20px;z-index:1000;}
+			
+/* ---- service -------------------------------------------------------------------------------------- */
+ul#service{margin:0 auto;width:250px;border-left:1px solid #006ed0;padding:0 0 0 40px;float:right;}
+ul#service li{color:#fff;float:left;}
+ul#service li h3{color:#fff;}
+ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align:left;}
+
+
+/* ---- contact -------------------------------------------------------------------------------------- */
+ul.contactus {margin:10px 0 10px 55px;padding:0;text-align:center;}
+ul.contactus li {margin:0;padding:0;float:left;width:120px;text-align:center;}
+ul.contactus li a {margin:0;font-family:'Roboto Condensed';font-size:20px;text-decoration:none;
+  text-transform:uppercase;}
+ul.contactus li a .name {color:#888;}
+ul.contactus li a .link {color:#177B01;text-transform:uppercase;}
+ul.contactus li:hover a .link{text-decoration:underline;}
+
+
+/* ---- pager -------------------------------------------------------------------------------------- */
+.pager {margin:0;padding:0;width:100%;}
+.pager a {float:left;margin:1px;padding:5px 12px;background:#04888A;border:0;color:#fff;font-weight:bold;}
+.pager a:hover {background:#fff;color:#000;border:0;}
+.pager a.selected {background:#fff;color:#000;border:0;}
+.pager .total{float:right;margin:5px 0 0 0;font-style:italic;}
+
+
+/* ---- jobs -------------------------------------------------------------------------------------- */
 .jobs-box{float:left;height:450px;margin:0 13px 13px 0;padding:0;background:#F3F3F3;border:1px solid #bbb;box-shadow:0 2px 3px 0px rgb(194,192,188);}
 .jobs-box h3{padding:20px 20px 10px 20px;color:#555;font-size:26px;letter-spacing:-1px;
  font-family:Open Sans Condensed;font-weight:normal;}
 .jobs-box span{padding:10px 20px;color:#888;font-size:14px;font-family:Open Sans Condensed;font-weight:normal;}
 
-
-ul#service{margin:0 auto;width:250px;border-left:1px solid #0089b9;padding:0 0 0 40px;float:right;}
-ul#service li{color:#fff;float:left;}
-ul#service li h3{color:#fff;}
-ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align:left;}
-                             
-#floater{position:absolute;right:10px;top:-35px;border:0;background:#fff;
-         color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
-         border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}
-         
-         
-.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
-           margin:0 15px 0 0;position:relative;vertical-align:top;}
-.home-box a {text-decoration:none;}
-.home-box h2 {font-size:24px!important;line-height:25px!important;font-family:Tahoma;}
-.home-box ul.list {float:left;margin:0 0 0 10px;}
-.home-box ul.list li{float:left;font-size:12px;color:#333;line-height:14px;font-weight:bold;}
-
-.camera-box{box-shadow:0 3px 8px rgba(0,0,0, 0.2);width:315px;height:315px;margin:0 13px 13px 0;padding:0;
-            background:#fff;position:relative;float:left;}
-.camera-box h3{width:275px;margin:0;padding:7px 20px;text-transform:uppercase;
-            background:#006ED0;color:#fff;font-weight:bold;}
-.camera-box .trans{width:295px;margin:0;padding:5px 10px;text-transform:;line-height:20px;font-size:13px;
-            background:rgba(0,110,208,0.7);background:rgba(0,110,208,0.2);color:#333;position:absolute;bottom:0;left:0;}
-			
