@@ -21,6 +21,8 @@
     <?php use_javascript('/addons/flexslider/jquery.flexslider-min.js');?>
     <?php use_stylesheet('/addons/flexslider/flexslider.css');?>
     
+    <?php use_stylesheet('/addons/teaser/style.css');?>
+    
     <?php use_javascript('/addons/ui/jquery-ui.min.js');?>
     
   	<?php include_stylesheets() ?>
