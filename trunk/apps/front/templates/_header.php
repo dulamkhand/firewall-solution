@@ -1,6 +1,6 @@
 <div id="header">
 <div id="floater">
-      (+976) 99029764, &nbsp; (+976) 99258807 &nbsp; &nbsp; | &nbsp; &nbsp; 
+      <?php echo sfConfig::get('app_phone')?> &nbsp; &nbsp; | &nbsp; &nbsp; 
       <a href="mailto:firewallsolution.llc@gmail.com" style="text-decoration:none;color:#777;font-size:16px;">
             firewallsolution.llc@gmail.com</a>
 </div>

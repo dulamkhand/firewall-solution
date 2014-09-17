@@ -19,7 +19,7 @@
     <br clear="all">
     
     <span style="text-decoration:none;color:<?php echo $textColor?>;">
-        <?php echo sfConfig::get('app_phone')?>   
+        <?php echo sfConfig::get('app_phone')?>
     </span>
     <br clear="all">
     <a href="mailto:<?php echo sfConfig::get('app_email')?>" style="text-decoration:none;color:<?php echo $textColor?>;">
