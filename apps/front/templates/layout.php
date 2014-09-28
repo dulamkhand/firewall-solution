@@ -47,8 +47,6 @@
 
 <?php echo $sf_content?>
 
-<br clear="all">
-
 <?php include_partial("global/footer", array());?>
 
 </body>

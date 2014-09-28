@@ -40,7 +40,7 @@
 </div>
 </div>
 
-<div class="page bg-gray" style="min-height:750px;">
+<div class="page bg-gray" style="min-height:700px;">
 <div class="wrapper">
     <h2 style="color:#666;padding-bottom:16px;margin-bottom:30px;border-bottom:1px solid #f0f0f0;">
     <?php echo __('Brief intro')?></h2>
@@ -58,30 +58,23 @@
 </div>
 </div>
 
-<div class="page bg-orange" style="min-height:600px;">
+<div class="page bg-orange" style="min-height:560px;">
 <div class="wrapper">
-    <h2><?php echo __('Works we did')?></h2>
-    <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>
-    <br clear="all">
+    <h2><?php echo __('Works we did')?></h2>    
     <?php include_partial('main/jobs', array());?>
 </div>
 </div>
 
-<div class="page bg-gray" style="min-height:600px;">
+<div class="page bg-gray" style="min-height:520px;">
 <div class="wrapper">
     <h2 class="orange"><?php echo __('Our clients')?></h2>
-    <p>Tell your visitors about the spectacular thumbnails displayed in the space below.</p>
-    <br clear="all">
     <?php include_partial('main/clients', array());?>
 </div>
 </div>
 
-<div class="page bg-white">
+<div class="page bg-white" style="min-height:520px;">
 <div class="wrapper">
     <h2 class="blue"><?php echo ('Contact')?></h2>
-    <br clear="all">
-    <p style="font-style:italic;font-weight:normal;color:#666;font-size:20px;font-family:Roboto Condensed;letter-spacing:-1px;">Get instant feedback from your visitors with a pre-configured contact form. Set the recipient email address and start receiving messages in your inbox.</p>
-    <br clear="all">
     <?php include_partial('main/feedback', array('form'=>$form));?>
     <?php include_partial('main/contact', array('textColor'=>'#333', 'lineColor'=>'#dedede', 'width'=>400));?>
 </div>
