@@ -55,15 +55,21 @@
 .image_thumb {
 	float: left;
 	width: 299px;
+	height: 472px;
 	background: #efefef;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #dedede;
+	overflow: scroll;
+	overflow-y: scroll;
+	y-overflow: scroll;
 }
 .image_thumb img {
 	border: 1px solid #dedede; 
-	padding: 5px; 
+	padding: 5px;
 	background: #fff; 
 	float: left;
+	max-width:100px;
+	max-height:100px;
 }
 .image_thumb ul {
 	margin: 0; padding: 0;
@@ -99,6 +105,8 @@ html .image_thumb ul li h3 {
 }	
 .image_thumb ul li p{display: none;}
 .image_thumb ul li .block span {
-  line-height:16px;
-	font-weight:bold;
+	line-height:17px;
+	font-style:italic;
+	color:#666;
+	font-family:Roboto Condensed;
 }

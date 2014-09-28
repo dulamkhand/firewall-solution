@@ -1,6 +1,6 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,
 b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,
-hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Tahoma;font-size:16px;
+hgroup,menu,nav,section,summary,time,mark,audio,a {font-family:Roboto Condensed;font-size:17px;font-style:italic;
 line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outline:0;background:transparent;}
 
 body{background:url("../images/bg-slash.png") repeat;}
@@ -11,7 +11,7 @@ body{background:url("../images/bg-slash.png") repeat;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
 #header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
-#header #menu ul li a{float:left;font-weight:bold;margin:14px 10px;text-decoration:none;font-size:13px;}
+#header #menu ul li a{float:left;font-weight:;margin:14px 10px;text-decoration:none;}
 #header #menu ul li.current a{color:#006ed0;}
 
 #footer{border-top:1px solid #ccc;padding:10px 0 15px 0;}
@@ -39,9 +39,11 @@ cufon{height:20px!important;}
 color:#177B01;font-weight:bold;padding:10 0px;width:970px;margin:0 15px;
 }
 
-input.field{border:1px solid #cdcdcd;margin:5px 0;width:243px;height:28px;color:#888;padding:3px 6px;border-radius:3px;}
-textarea.field{border:1px solid #cdcdcd;margin:5px 0;width:508px;height:250px;color:#888;padding:3px 6px;border-radius:3px;}
-a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-decoration:none;background:#006ed0;border-radius:3px;}
+input.field{border:1px solid #cdcdcd;margin:5px 0;width:243px;height:28px;color:#888;padding:3px 6px;border-radius:3px;
+		  font-family:Roboto Condensed;font-size:17px;font-style:italic;}
+textarea.field{border:1px solid #cdcdcd;margin:5px 0;width:508px;height:250px;color:#888;padding:3px 6px;border-radius:3px;
+			 font-family:Roboto Condensed;font-size:17px;font-style:italic;}
+a.button{border:0;float:left;margin:1px 0 0 0;padding:2px 20px;color:#fff;text-decoration:none;background:#006ed0;border-radius:3px;}
 
 .fff{color:#fff;}
 .red{color:red;}
@@ -53,7 +55,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 
 .page{position:relative;display:block;min-height:655px;width:100%;padding:25px 0;}
 .page h2 {color:#fff;font-size:30px;font-weight:900;letter-spacing:-1px;line-height:40px;text-transform:uppercase;
-  margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:Open Sans Condensed;}
+  margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:roboto condensed;font-style:italic;}
 .bg-blue{background:url("../images/bg-blue.png") repeat;}
 .bg-bluenew{background:url("../images/bg-blue2.jpg") repeat scroll -137px 0 rgba(0, 0, 0, 0.2);}
 .bg-dark-blue{background:url("../images/bg-dark-blue.png") repeat;}
@@ -74,7 +76,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 .home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
            margin:0 15px 0 0;position:relative;vertical-align:top;}
 .home-box a {text-decoration:none;}
-.home-box h2 {line-height:30px!important;}
+.home-box h2 {line-height:30px!important;font-size:26px!important;}
 .home-box ul.list {float:left;margin:0 0 0 10px;width:200px;}
 .home-box ul.list li {line-height:20px;}
 .home-box ul.list li a{color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;line-height:20px;}
@@ -82,24 +84,25 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
 /* ---- about -------------------------------------------------------------------------------------- */
 .about-text {float:left;width:470px;margin:0;text-align:justify;
 			color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
-
+.about-text  .title{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;font-weight:bold;}
 /* ---- product -------------------------------------------------------------------------------------- */
 ul#product-category{width:230px;background:#fff;padding:0;margin:0 15px 0 0;float:left;}
-ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px dotted #ccc;
-                         padding:5px 20px;display:block;width:190px;}
+ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px dotted #ccc;padding:5px 20px;display:block;width:190px;
+					  color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
 .product-box{box-shadow:0 3px 8px rgba(0,0,0, 0.2);width:220px;height:220px;margin:0 10px 10px 0;padding:10px;
              background:#fff;position:relative;float:left;text-align:center;}
 .product-box h3{width:200px;margin:0;padding:2px 20px;text-transform:uppercase;
                 background:#006ED0;color:#fff;font-weight:bold;}
-.product-box .trans{width:220px;margin:0;padding:5px 10px;text-transform:;line-height:20px;font-size:13px;
-                    background:rgba(0,110,208,0.2);background:rgba(0,110,208,0.9);color:#fff;font-weight:bold;
-                    position:absolute;bottom:0;left:0;height:60px;text-align:left;line-height:20px;z-index:1000;}
+.product-box .trans{width:220px;margin:0;padding:5px 10px;text-transform:;overflow:hidden;
+                    background:rgba(0,110,208,0.2);background:rgba(0,110,208,0.9);
+					color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;
+                    position:absolute;bottom:0;left:0;height:44px;text-align:left;line-height:20px;z-index:1000;}
 			
 /* ---- service -------------------------------------------------------------------------------------- */
 ul#service{margin:0 auto;width:250px;border-left:1px solid #f0f0f0;padding:0 0 0 40px;float:right;}
 ul#service li{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
 ul#service li .title{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;font-weight:bold;}
-ul#service li ul.list_nested{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;float:left;padding:0 0 0 30px;text-align:left;}
+ul#service li ul.list_nested{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;float:left;width:250px;text-align:left;}
 
 
 /* ---- contact -------------------------------------------------------------------------------------- */
