@@ -4,7 +4,7 @@
     		<?php echo image_tag('/u/jobs/1.jpg', array())?>
     		<div class="desc">
       			<div class="block">
-        				<span style="font-weight:bold;color:#fff;">Luigi's Mansion</span>
+        				<span style="font-weight:bold;color:#fff;">16 сувгийн бичигч төхөөрөмж</span>
         				<p>08/27/2013</p>
         				<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat etc.
       			</div>
@@ -15,7 +15,7 @@
       			<li>
       				<a href="<?php echo $host.'/u/jobs/1.jpg'?>"><?php echo image_tag('/u/jobs/t1.jpg', array())?></a>
       				<div class="block">
-      					<span>Luigi's Mansion</span>
+      					<span>16 сувгийн бичигч төхөөрөмж</span>
       					<p>08/27/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.
       				</div>
@@ -23,7 +23,7 @@
       			<li>
       				<a href="<?php echo $host.'/u/jobs/2.jpg'?>"><?php echo image_tag('/u/jobs/t2.jpg', array())?></a>
       				<div class="block">
-      					<span>The Outichoke Lantern</span>
+      					<span>Хяналтын өрөөнд харагдах байдал</span>
       					<p>08/21/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
       				</div>
@@ -31,7 +31,7 @@
       			<li>
       				<a href="<?php echo $host.'/u/jobs/3.jpg'?>"><?php echo image_tag('/u/jobs/t3.jpg', array())?></a>
       				<div class="block">
-      					<span>Waiter</span>
+      					<span>Дотор суурилуулат</span>
       					<p>08/27/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.
       				</div>
@@ -39,23 +39,71 @@
       			<li>
       				<a href="<?php echo $host.'/u/jobs/4.jpg'?>"><?php echo image_tag('/u/jobs/t4.jpg', array())?></a>
       				<div class="block">
-      					<span>Rabbit in the Hat</span>
+      					<span>Дотор суурилуулат</span>
       					<p>08/29/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
       				</div>
       			</li>
       			<li>
-      				<a href="<?php echo $host.'/u/jobs/4.jpg'?>"><?php echo image_tag('/u/jobs/t4.jpg', array())?></a>
+      				<a href="<?php echo $host.'/u/jobs/5.jpg'?>"><?php echo image_tag('/u/jobs/t5.jpg', array())?></a>
       				<div class="block">
-      					<span>Rabbit in the Hat</span>
+      					<span>Гадна суурилуулат</span>
       					<p>08/29/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
       				</div>
       			</li>
       			<li>
-      				<a href="<?php echo $host.'/u/jobs/4.jpg'?>"><?php echo image_tag('/u/jobs/t4.jpg', array())?></a>
+      				<a href="<?php echo $host.'/u/jobs/6.jpg'?>"><?php echo image_tag('/u/jobs/t6.jpg', array())?></a>
       				<div class="block">
-      					<span>Rabbit in the Hat</span>
+      					<span>Гадна суурилуулат</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/7.jpg'?>"><?php echo image_tag('/u/jobs/t7.jpg', array())?></a>
+      				<div class="block">
+      					<span>Дууны систем</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/8.jpg'?>"><?php echo image_tag('/u/jobs/t8.jpg', array())?></a>
+      				<div class="block">
+      					<span>Дууны систем</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/9.jpg'?>"><?php echo image_tag('/u/jobs/t9.jpg', array())?></a>
+      				<div class="block">
+      					<span>Дууны систем</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/10.jpg'?>"><?php echo image_tag('/u/jobs/t10.jpg', array())?></a>
+      				<div class="block">
+      					<span>Хяналтын өрөөнөөс харагдах байдал</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/11.jpg'?>"><?php echo image_tag('/u/jobs/t11.jpg', array())?></a>
+      				<div class="block">
+      					<span>Хяналтын камер дотор суурилуулат</span>
+      					<p>08/29/2013</p>
+      					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
+      				</div>
+      			</li>
+				<li>
+      				<a href="<?php echo $host.'/u/jobs/12.jpg'?>"><?php echo image_tag('/u/jobs/t12.jpg', array())?></a>
+      				<div class="block">
+      					<span>Хяналтын камер дотор суурилуулат</span>
       					<p>08/29/2013</p>
       					<p>Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et. Autem conventio nimis quis ad, nisl secundum sed, facilisi, vicis augue regula, ratis, autem. Neo nostrud letatio aliquam validus eum quadrum, volutpat et.</p>
       				</div>
