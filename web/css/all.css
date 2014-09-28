@@ -14,7 +14,7 @@ body{background:url("../images/bg-slash.png") repeat;}
 #header #menu ul li a{float:left;font-weight:bold;margin:14px 10px;text-decoration:none;font-size:13px;}
 #header #menu ul li.current a{color:#006ed0;}
 
-#footer{border-top:1px solid #ccc;padding:10px 0;}
+#footer{border-top:1px solid #ccc;padding:10px 0 15px 0;}
 #footer ul li{float:left;margin:0 10px;color:#666}
 #footer ul li.sep{color:#aaa;}
 #footer ul li a{color:#666;text-decoration:none;}
@@ -75,8 +75,13 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:5px 20px;color:#fff;text-d
            margin:0 15px 0 0;position:relative;vertical-align:top;}
 .home-box a {text-decoration:none;}
 .home-box h2 {line-height:30px!important;}
-.home-box ul.list {float:left;margin:0 0 0 10px;}
-.home-box ul.list li{float:left;font-size:12px;color:#333;line-height:14px;font-weight:bold;}
+.home-box ul.list {float:left;margin:0 0 0 10px;width:200px;}
+.home-box ul.list li {line-height:20px;}
+.home-box ul.list li a{color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;line-height:20px;}
+
+/* ---- about -------------------------------------------------------------------------------------- */
+.about-text {float:left;width:470px;margin:0;text-align:justify;
+			color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
 
 /* ---- product -------------------------------------------------------------------------------------- */
 ul#product-category{width:230px;background:#fff;padding:0;margin:0 15px 0 0;float:left;}
@@ -91,10 +96,10 @@ ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px 
                     position:absolute;bottom:0;left:0;height:60px;text-align:left;line-height:20px;z-index:1000;}
 			
 /* ---- service -------------------------------------------------------------------------------------- */
-ul#service{margin:0 auto;width:250px;border-left:1px solid #006ed0;padding:0 0 0 40px;float:right;}
-ul#service li{color:#fff;float:left;}
-ul#service li h3{color:#fff;}
-ul#service li ul.list_nested{color:#fff;float:left;padding:0 0 0 30px;text-align:left;}
+ul#service{margin:0 auto;width:250px;border-left:1px solid #f0f0f0;padding:0 0 0 40px;float:right;}
+ul#service li{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
+ul#service li .title{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;font-weight:bold;}
+ul#service li ul.list_nested{color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;float:left;padding:0 0 0 30px;text-align:left;}
 
 
 /* ---- contact -------------------------------------------------------------------------------------- */

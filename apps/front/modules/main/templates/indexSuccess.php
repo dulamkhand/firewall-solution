@@ -6,9 +6,8 @@
       		  <div class="left" style="width:150px;margin:5px 0 0 10px;">
       		      <h2><?php echo __('Security camera')?></h2>
         				<ul class="list">
-          				  <li> - <?php echo __('Албан газар байгууллага')?></li>
-          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
+							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
         				</ul>
       		  </div>
     				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>				
@@ -19,9 +18,8 @@
     		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
         				<h2><?php echo __('Local network')?></h2>
         				<ul class="list">
-          				  <li> - <?php echo __('Дотоод сүлжээ')?></li>
-          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
+							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
         				</ul>
             </div>
             <?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
@@ -32,10 +30,9 @@
     		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
 		            <h2><?php echo __('Sound system')?></h2>
 		            <ul class="list">
-          				  <li> - <?php echo __('Албан газар байгууллага')?></li>
-          				  <li> - <?php echo __('Үйлчилгээний газрууд')?></li>
-          				  <li> - <?php echo __('Сургууль цэцэрлэг')?></li>
-        				</ul>
+          				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+          				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+					</ul>
     		    </div>
 	   	   		<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
     		</a>
@@ -43,9 +40,9 @@
 </div>
 </div>
 
-<div class="page bg-bluenew" style="min-height:700px;">
+<div class="page bg-gray" style="min-height:750px;">
 <div class="wrapper">
-    <h2 style="border-bottom:1px solid #51AEFF;padding-bottom:16px;margin-bottom:40px;">
+    <h2 style="color:#666;padding-bottom:16px;margin-bottom:30px;border-bottom:1px solid #f0f0f0;">
     <?php echo __('Brief intro')?></h2>
     <?php include_partial('main/about', array());?>
     <?php include_partial('main/service', array());?>

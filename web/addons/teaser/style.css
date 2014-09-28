@@ -93,9 +93,9 @@ html .image_thumb ul li h3 {
 }
 .image_thumb ul li .block {
 	float: left; 
-	margin-left: 10px;
+	margin:10px 0 0 10px;
 	padding: 0;
-	width: 180px;
+	width: 157px;
 }	
 .image_thumb ul li p{display: none;}
 .image_thumb ul li .block span {
