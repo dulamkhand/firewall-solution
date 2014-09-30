@@ -2,9 +2,9 @@
     <ul id="product-category">
         <li><a href="#tabs-1"><?php echo __('DVR\'s and Kits')?></a></li>
         <li><a href="#tabs-2"><?php echo __('Security cameras')?></a></li>
-        <li><a href="#tabs-5"><?php echo __('Sound systems')?></a></li>
-		<li><a href="#tabs-3"><?php echo __('Network equipments')?></a></li>
-        <li><a href="#tabs-4"><?php echo __('Fire alarm')?></a></li>
+        <li><a href="#tabs-3"><?php echo __('Sound systems')?></a></li>
+		<li><a href="#tabs-4"><?php echo __('Network equipments')?></a></li>
+        <li><a href="#tabs-5"><?php echo __('Fire alarm')?></a></li>
         <li><a href="#tabs-6"><?php echo __('Domophone systems')?></a></li>
         <li><a href="#tabs-7"><?php echo __('Accessories')?></a></li>
     </ul>
@@ -148,6 +148,41 @@
 		<div class="product-box">
     		    <div class="trans"><?php echo __('Camera 1')?></div>
             <?php echo image_tag('/u/products/ip/ip5.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 1')?></div>
+            <?php echo image_tag('/u/products/ip/ip6.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 1')?></div>
+            <?php echo image_tag('/u/products/ip/ip7.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 1')?></div>
+            <?php echo image_tag('/u/products/ip/ip8.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+    </div>
+	
+	<div id="tabs-4" class="left" style="width:750px;">
+        <div class="product-box">
+    		    <div class="trans"><?php echo __('')?></div>
+            <?php echo image_tag('/u/products/network/1.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 2')?></div>
+            <?php echo image_tag('/u/products/network/2.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+			<div class="trans"><?php echo __('1.0M Pixels IR WaterProof Dome Network Camera')?></div>
+            <?php echo image_tag('/u/products/network/3.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 1')?></div>
+            <?php echo image_tag('/u/products/network/4.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
+        </div>
+		<div class="product-box">
+    		    <div class="trans"><?php echo __('Camera 1')?></div>
+            <?php echo image_tag('/u/products/network/5.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
         </div>
 		<div class="product-box">
     		    <div class="trans"><?php echo __('Camera 1')?></div>
