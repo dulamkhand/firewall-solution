@@ -37,7 +37,7 @@ all:
     standard_helpers:       [Partial, Cache, Global, I18N, sfCryptoCaptcha]
 
     i18n:                   true
-    default_culture:        mn
+    default_culture:        en
     charset:                utf-8
     
     rich_text_fck_js_dir:   js/fckeditor

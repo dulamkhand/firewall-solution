@@ -1,11 +1,11 @@
-<div id="product-tabs">
+﻿<div id="product-tabs">
     <ul id="product-category">
         <li><a href="#tabs-1"><?php echo __('DVR\'s and Kits')?></a></li>
         <li><a href="#tabs-2"><?php echo __('Security cameras')?></a></li>
-        <li><a href="#tabs-3"><?php echo __('Wireless & IP Cameras')?></a></li>
-        <li><a href="#tabs-4"><?php echo __('High speed Dome cameras')?></a></li>
         <li><a href="#tabs-5"><?php echo __('Sound systems')?></a></li>
-        <li><a href="#tabs-6"><?php echo __('Domophones')?></a></li>
+		<li><a href="#tabs-3"><?php echo __('Network equipments')?></a></li>
+        <li><a href="#tabs-4"><?php echo __('Fire alarm')?></a></li>
+        <li><a href="#tabs-6"><?php echo __('Domophone systems')?></a></li>
         <li><a href="#tabs-7"><?php echo __('Accessories')?></a></li>
     </ul>
     
