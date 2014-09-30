@@ -32,7 +32,7 @@
 		            <ul class="list">
           				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
           				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
-					</ul>
+					      </ul>
     		    </div>
 	   	   		<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>
     		</a>
@@ -40,15 +40,22 @@
 </div>
 </div>
 
+<a name="about"></a>
+<br clear="all">
+<br clear="all">
 <div class="page bg-gray" style="min-height:700px;">
 <div class="wrapper">
     <h2 style="color:#666;padding-bottom:16px;margin-bottom:30px;border-bottom:1px solid #f0f0f0;">
-    <?php echo __('Brief intro')?></h2>
+        <?php echo __('Brief intro')?>
+    </h2>
     <?php include_partial('main/about', array());?>
     <?php include_partial('main/service', array());?>
 </div>
 </div>
 
+<a name="products"></a>
+<br clear="all">
+<br clear="all">
 <div class="page bg-dark-gray" style="min-height:1050px;">
 <div class="wrapper">
     <h2 style="color:#006ED0;">
@@ -58,21 +65,31 @@
 </div>
 </div>
 
+<a name="jobs"></a>
+<br clear="all">
+<br clear="all">
 <div class="page bg-orange" style="min-height:560px;">
 <div class="wrapper">
-    <h2><?php echo __('Works we did')?></h2>    
+    <h2><?php echo __('Works we did')?></h2>
     <?php include_partial('main/jobs', array());?>
 </div>
 </div>
 
-<div class="page bg-gray" style="min-height:520px;">
+<a name="clients"></a>
+<br clear="all">
+<br clear="all">
+<div class="page bg-gray" style="min-height:560px;">
 <div class="wrapper">
     <h2 class="orange"><?php echo __('Our clients')?></h2>
     <?php include_partial('main/clients', array());?>
 </div>
 </div>
 
-<div class="page bg-white" style="min-height:520px;">
+
+<a name="contact"></a>
+<br clear="all">
+<br clear="all">
+<div class="page bg-white" style="min-height:560px;">
 <div class="wrapper">
     <h2 class="blue"><?php echo ('Contact')?></h2>
     <?php include_partial('main/feedback', array('form'=>$form));?>
@@ -80,3 +97,6 @@
 </div>
 </div>
 
+<br clear="all">
+<br clear="all">
+<br clear="all">

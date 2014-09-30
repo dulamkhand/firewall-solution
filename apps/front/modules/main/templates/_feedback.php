@@ -30,7 +30,7 @@
           </tr>
           <tr>
              <td colspan="2">
-                <a href="javascript:$('#formFeedback').submit();" class="button"><?php echo __('SEND')?></a>
+                <a href="#contact" onclick="$('#formFeedback').submit();" class="button"><?php echo __('SEND')?></a>
              </td>
           </tr>
         </table>

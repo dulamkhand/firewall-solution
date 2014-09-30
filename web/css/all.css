@@ -5,16 +5,22 @@ line-height:30px;position:relative;color:#333;margin:0;padding:0;border:0;outlin
 
 body{background:url("../images/bg-slash.png") repeat;}
 .wrapper{width:1000px;margin:0 auto;position:relative;background:transparent;}
-#header{clear:both;height:80px;position:relative;text-align:center;top:40px;z-index:350;}
-#header #menu{background:url("../images/menu.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-  height:62px;line-height:62px;position:absolute;left:0;width:1050px;}
+#header{clear:both;height:53px;position:fixed;text-align:center;left:0;top:0;
+        z-index:350;width:100%;background:rgba(0,0,0,0.7);}
+#header #menu{width:1000px;}
 #header #menu ul{}
 #header #menu ul li{float:left;}
-#header #menu ul li.separator{width:1px;height:12px;background:#ccc;margin:23px 8px 0 8px;}
-#header #menu ul li a{float:left;font-weight:;margin:14px 10px;text-decoration:none;}
-#header #menu ul li.current a{color:#006ed0;}
+#header #menu ul li a{float:left;margin:0;font-weight:;padding:11px 23px;text-decoration:none;
+                      color:#fff;border-right:1px solid #dedede;}
+#header #menu ul li a:hover{background:rgba(0,110,208,0.8)}
+#header #menu ul li.current a{color:#fff;}
 
-#footer{border-top:1px solid #ccc;padding:10px 0 15px 0;}
+#floater{position:fixed;right:0px;bottom:0px;border:0;background:rgba(0,0,0,0.7);
+         color:#fff;box-shadow:0 2px 7px #aaa;font-size:14px;color:#fff;
+         border-top-left-radius:5px;border-top-right-radius:5px;padding:0px 15px;}
+#floater a{color:#fff;text-decoration:none;font-size:16px;}
+
+#footer{border-top:1px solid #dedede;padding:5px 0 5px 0;}
 #footer ul li{float:left;margin:0 10px;color:#666}
 #footer ul li.sep{color:#aaa;}
 #footer ul li a{color:#666;text-decoration:none;}
@@ -69,10 +75,7 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:2px 20px;color:#fff;text-d
 .bg-orange{background:#F26222;}  
 
 /* ---- home -------------------------------------------------------------------------------------- */
-#floater{position:absolute;right:10px;top:-40px;border:0;background:#fff;
-         color:#777;box-shadow:0 2px 7px #aaa;font-size:14px;
-         border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0px 15px;}
-         
+        
 .home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
            margin:0 15px 0 0;position:relative;vertical-align:top;}
 .home-box a {text-decoration:none;}
@@ -95,8 +98,8 @@ ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px 
                 background:#006ED0;color:#fff;font-weight:bold;}
 .product-box .trans{width:220px;margin:0;padding:5px 10px;text-transform:;overflow:hidden;
                     background:rgba(0,110,208,0.2);background:rgba(0,110,208,0.9);
-					color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;
-                    position:absolute;bottom:0;left:0;height:44px;text-align:left;line-height:20px;z-index:1000;}
+					          color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;
+                    position:absolute;bottom:0;left:0;height:44px;text-align:left;line-height:20px;z-index:100;}
 			
 /* ---- service -------------------------------------------------------------------------------------- */
 ul#service{margin:0 auto;width:250px;border-left:1px solid #f0f0f0;padding:0 0 0 40px;float:right;}
