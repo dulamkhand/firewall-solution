@@ -46,11 +46,5 @@
     <a href="skype:<?php echo sfConfig::get('app_skype')?>?call" target="_blank" style="text-decoration:none;">
        <?php echo image_tag('i/skype-4-m.png', array())?>
     </a>
-    <a href="http://www.pinterest.com/<?php echo sfConfig::get('app_pinterest')?>" target="_blank" style="text-decoration:none;">
-       <?php echo image_tag('i/pinterest-4-m.png', array())?>
-    </a>
-    <a href="http://www.instagram.com/<?php echo sfConfig::get('app_instagram')?>" target="_blank" style="text-decoration:none;">
-       <?php echo image_tag('i/instagram-4-m.png', array())?>
-    </a>
-
+  
 </div>
