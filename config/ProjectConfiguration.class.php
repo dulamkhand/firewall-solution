@@ -9,9 +9,9 @@ class ProjectConfiguration extends sfProjectConfiguration
   public function setup()
   {
       $this->enablePlugins('sfDoctrinePlugin', 'sfThumbnailPlugin');
-      sfConfig::set('sf_web_dir', 'C:\wamp\www\simpedil\web');
-      sfConfig::set('sf_upload_dir', 'C:\wamp\www\simpedil\web\u');
-      sfConfig::set('rich_text_fck_js_dir', 'C:\wamp\www\simpedil\web\js');
+      sfConfig::set('sf_web_dir', 'C:\wamp\www\firewall\web');
+      sfConfig::set('sf_upload_dir', 'C:\wamp\www\firewall\web\u');
+      sfConfig::set('rich_text_fck_js_dir', 'C:\wamp\www\firewall\web\js');
       
       #sfConfig::set('sf_web_dir', '/home/simpel6r/public_html');
       #sfConfig::set('sf_upload_dir', '/home/simpel6r/public_html/u');

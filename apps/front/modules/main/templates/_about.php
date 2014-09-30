@@ -1,4 +1,4 @@
-<div class="left" style="width:670px;padding:0;">
+﻿<div class="left" style="width:670px;padding:0;">
     
     <div class="about-text" style="margin:0 40px 0 0;">
     		<span class="title"><?php echo __('Our story')?>: </span><br>
