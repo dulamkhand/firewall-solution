@@ -60,7 +60,8 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:2px 20px;color:#fff;text-d
 .orange{color:#F26222!important;}
 
 .page{position:relative;display:block;min-height:655px;width:100%;padding:25px 0;}
-.page h2 {color:#fff;font-size:30px;font-weight:900;letter-spacing:-1px;line-height:40px;text-transform:uppercase;
+.page h2 {color:#fff;font-size:30px;font-weight:900;letter-spacing:-1px;line-height:40px;text-
+Zform:uppercase;
   margin:0 0 10px;text-align:left;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);font-family:roboto condensed;font-style:italic;}
 .bg-blue{background:url("../images/bg-blue.png") repeat;}
 .bg-bluenew{background:url("../images/bg-blue2.jpg") repeat scroll -137px 0 rgba(0, 0, 0, 0.2);}
@@ -93,10 +94,10 @@ ul#product-category{width:230px;background:#fff;padding:0;margin:0 15px 0 0;floa
 ul#product-category li a{text-decoration:none;background:#fff;border-bottom:1px dotted #ccc;padding:5px 20px;display:block;width:190px;
 					  color:#666;font-family:Roboto Condensed;font-size:17px;font-style:italic;}
 .product-box{box-shadow:0 3px 8px rgba(0,0,0, 0.2);width:220px;height:220px;margin:0 10px 10px 0;padding:10px;
-             background:#fff;position:relative;float:left;text-align:center;}
+             background:#fff;position:relative;float:left;text-align:center;overflow:hidden;}
 .product-box h3{width:200px;margin:0;padding:2px 20px;text-transform:uppercase;
                 background:#006ED0;color:#fff;font-weight:bold;}
-.product-box .trans{width:220px;margin:0;padding:5px 10px;text-transform:;overflow:hidden;
+.product-box .trans{width:100%;margin:0;padding:5px 10px;text-transform:;overflow:hidden;
                     background:rgba(0,110,208,0.2);background:rgba(0,110,208,0.9);
 					          color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;
                     position:absolute;bottom:0;left:0;height:44px;text-align:left;line-height:20px;z-index:100;}
