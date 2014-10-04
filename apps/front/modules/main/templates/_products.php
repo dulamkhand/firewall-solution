@@ -186,14 +186,16 @@
             <?php echo image_tag('/u/products/network/3.jpg', array('style'=>'max-width:220px;max-height:220px'))?>
         </div>
 		
-		<div class="product-box" style="text-align:left;">
+		<div class="product-box" style="text-align:left;line-height:24px;">
 			- 2 чилын дууны кабел<br>
-			- Сүлжээний утас cat5e cat6, Тэжээлийн утаснууд<br>
+			- Сүлжээний утас cat5e cat6<br> 
+			- Тэжээлийн утаснууд<br>
 			- Удирдлагын гар<br>
 			- Дүрс салаалагч<br>
 			- Камерын хөл<br>
 			- Никель, Төмөр<br>
-			- Хард диск, Тэжээлын блок
+			- Хард диск<br>
+			- Тэжээлын блок
 		</div>
 
 		<div class="product-box">
