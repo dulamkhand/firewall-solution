@@ -2,7 +2,7 @@
 <div class="wrapper">
     <?php include_partial("content/slider", array());?>
     <div class="home-box">
-    		<a href="#tabs1">
+    		<a href="#tabs-1">
       		  <div class="left" style="width:165px;margin:5px 0 0 10px;">
       		      <h2 style="margin:0;"><?php echo __('Security camera')?></h2>
         				<ul class="list">

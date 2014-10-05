@@ -77,12 +77,12 @@ a.button{border:0;float:left;margin:1px 0 0 0;padding:2px 20px;color:#fff;text-d
 
 /* ---- home -------------------------------------------------------------------------------------- */
         
-.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:145px;width:323px;
+.home-box {background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;height:190px;width:323px;
            margin:0 15px 0 0;position:relative;vertical-align:top;}
 .home-box a {text-decoration:none;}
 .home-box h2 {line-height:30px!important;font-size:22px!important;}
 .home-box ul.list {float:left;margin:0 0 0 10px;width:200px;}
-.home-box ul.list li {line-height:20px;}
+.home-box ul.list li {color:#666;}
 .home-box ul.list li a{color:#fff;font-family:Roboto Condensed;font-size:17px;font-style:italic;line-height:20px;}
 
 /* ---- about -------------------------------------------------------------------------------------- */
