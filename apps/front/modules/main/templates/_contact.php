@@ -1,6 +1,6 @@
 <div class="right" style="width:<?php echo $width?>px;border-left:1px solid <?php echo $lineColor?>;padding:0 0 0 40px;">
 
-    <!--<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCCai3UpfJoxQUYLs7rE_CcSHM8pVBDPqM" type="text/javascript"></script>-->
+    <script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCCai3UpfJoxQUYLs7rE_CcSHM8pVBDPqM" type="text/javascript"></script>
     <?php use_javascript('jQuery.bMap.1.2.3.js');?>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -8,14 +8,14 @@
       		mapZoom: 12,
       		mapCenter:[<?php echo sfConfig::get('app_lat')?>, <?php echo sfConfig::get('app_lng')?>],
       		markers:{"data":[{
-      				"lat":<?php echo sfConfig::get('app_lat')?>,"lng":<?php echo sfConfig::get('app_lng')?>,"title":"FIREWALL SOLUTION","body":""
+      				"lat":<?php echo sfConfig::get('app_lat')?>, 
+      				"lng":<?php echo sfConfig::get('app_lng')?>,
+      				"title":"FIREWALL SOLUTION LLC","body":""
     			}]}
       	});
       });
     </script>
     <div id="mapContact" style="width:<?php echo $width?>;height:200px;border-radius:12px;"></div>
-    
-    
     <br clear="all">
     
     <span style="text-decoration:none;color:<?php echo $textColor?>;">

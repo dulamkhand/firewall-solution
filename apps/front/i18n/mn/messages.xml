@@ -25,64 +25,32 @@
         <target>Холбоо барих</target>
       </trans-unit>
       <trans-unit>
-        <source>Contact us</source>
-        <target>Бидэнтэй холбогдох</target>
+        <source>Our story</source>
+        <target>Бидний тухай</target>
       </trans-unit>
       <trans-unit>
-        <source>Socials</source>
-        <target>Сүлжээ</target>
+        <source>Idea</source>
+        <target>Эрхэм зорилго</target>
       </trans-unit>
       <trans-unit>
-        <source>Fax</source>
-        <target>Факс</target>
+        <source>Team</source>
+        <target>Манай баг</target>
       </trans-unit>
       <trans-unit>
-        <source>Website</source>
-        <target>Вэбсайт</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Email</source>
-        <target>Имэйл</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Phone</source>
-        <target>Утас</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Address</source>
-        <target>Хаяг</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Location</source>
-        <target>Хаяг, байршил</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Local network</source>
-        <target>Дотоод сүлжээ</target>
-      </trans-unit>
-      <trans-unit>
-        <source>More</source>
-        <target>Дэлгэрэнгүй</target>
+        <source>Supplier</source>
+        <target>Манай нийлүүлэгч</target>
       </trans-unit>
       <trans-unit>
         <source>Security camera</source>
         <target>Хяналтын камер</target>
       </trans-unit>
       <trans-unit>
-        <source>LAN</source>
-        <target>LAN</target>
+        <source>Local network</source>
+        <target>Дотоод сүлжээ</target>
       </trans-unit>
       <trans-unit>
         <source>Sound system</source>
         <target>Дууны систем</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Package 1</source>
-        <target>Багц 1</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Package 2</source>
-        <target>Багц 2</target>
       </trans-unit>
       <trans-unit>
         <source>Your name</source>
@@ -103,34 +71,6 @@
       <trans-unit>
         <source>Contact us</source>
         <target>Холбоо барих</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Enter your comment.</source>
-        <target>Cэтгэгдлээ оруулна уу.</target>
-      </trans-unit>
-      <trans-unit>
-        <source>COMMENTS</source>
-        <target>СЭТГЭГДЛҮҮД</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Leave a comment</source>
-        <target>Сэтгэгдэл үлдээх</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Error occured. Please try again later.</source>
-        <target>Алдаа гарлаа. Та хэсэг хугацааны дараа сэтгэгдлээ үлдээгээрэй.</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Duplicated comment.</source>
-        <target>Таны сэтгэгдэл өмнө нь орсон байна.</target>
-      </trans-unit>
-      <trans-unit>
-        <source>LEAVE A COMMENT</source>
-        <target>СЭТГЭГДЭЛ ҮЛДЭЭХ</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Guest</source>
-        <target>Зочин</target>
       </trans-unit>
       <trans-unit>
         <source>All rights reserved.</source>

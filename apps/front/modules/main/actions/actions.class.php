@@ -28,16 +28,15 @@ class mainActions extends sfActions
   
                 // send mail
                 $mailBody = $this->getPartial("main/mail", array('feedback'=>$feedback));
-                $message = $this->getMailer()->compose(array($feedback->getEmail()), array('firewallsolution.llc@gmail.com'=>'www.firewall-solution.com'), 'www.firewall-solution.mn :: Захидал, захиалга, санал хүсэлт', $mailBody);
+                $message = $this->getMailer()->compose(array($feedback->getEmail()),
+                      array('firewallsolution.llc@gmail.com'=>'www.firewall-solution.mn'),
+                            'www.firewall-solution.mn :: Захидал, захиалга, санал хүсэлт', $mailBody);
                 $message->setContentType("text/html");
                 $this->getMailer()->send($message);
-                
                 $this->getUser()->setFlash('success', __('Successfully sent.'), true);
-                
                 $this->redirect('@homepage');
             }
         }
-        
         $this->form = $form;
     }
     
