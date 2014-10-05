@@ -93,12 +93,8 @@
         <target>Байгууллагын нэр</target>
       </trans-unit>
       <trans-unit>
-        <source>Message</source>
-        <target>Зурвас</target>
-      </trans-unit>
-      <trans-unit>
-        <source>Book a product</source>
-        <target>Бүтээгдэхүүн захиалга</target>
+        <source>About product</source>
+        <target>Бүтээгдэхүүний тухай</target>
       </trans-unit>
       <trans-unit>
         <source>SEND</source>
@@ -137,8 +133,8 @@
         <target>Зочин</target>
       </trans-unit>
       <trans-unit>
-        <source></source>
-        <target></target>
+        <source>All rights reserved.</source>
+        <target>Зохиогчийн эрх хуулиар хамгаалагдсан болно.</target>
       </trans-unit>
       <trans-unit>
         <source></source>
