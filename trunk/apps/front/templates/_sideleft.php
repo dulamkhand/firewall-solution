@@ -1,7 +1,7 @@
 <div id="sideleft">
 
     <a href="<?php echo url_for('@homepage')?>" class="left" style="margin:0;">
-        <?php echo image_tag('logo.png', array('style'=>''))?>
+        <?php echo image_tag('logo200.png', array('style'=>''))?>
     </a>
     
     <br class="all">

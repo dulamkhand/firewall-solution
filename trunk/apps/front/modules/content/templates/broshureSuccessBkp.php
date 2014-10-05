@@ -1,6 +1,6 @@
 ﻿<div class="wrapper" style="width:1300px;">
 
-<?php echo image_tag('logo.png', array())?>
+<?php echo image_tag('logo200.png', array())?>
 
 <br clear="all">
 <div style="float:left;width:390px;height:270px;padding:15px;border-top-left-radius:6px;border-bottom-left-radius:6px;background:#;" class="bg-orange">
