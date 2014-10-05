@@ -2,36 +2,36 @@
 <div class="wrapper">
     <?php include_partial("content/slider", array());?>
     <div class="home-box">
-    		<a href="#">
-      		  <div class="left" style="width:150px;margin:5px 0 0 10px;">
-      		      <h2><?php echo __('Security camera')?></h2>
+    		<a href="#tabs1">
+      		  <div class="left" style="width:165px;margin:5px 0 0 10px;">
+      		      <h2 style="margin:0;"><?php echo __('Security camera')?></h2>
         				<ul class="list">
-							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
-							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+							  <li><?php echo __('o Сургууль, цэцэрлэгт зориулсан хяналтын камер')?></li>
+							  <li><?php echo __('o Супер маркет болон үйлчилгээний газрын зориулалттай камерууд')?></li>
         				</ul>
       		  </div>
     				<?php echo image_tag('home-camera.png', array('style'=>'float:right;'));?>				
     		</a>
     </div>
     <div class="home-box">
-    		<a href="#">
+    		<a href="#tabs-4">
     		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
-        				<h2><?php echo __('Local network')?></h2>
+        				<h2 style="margin:0;"><?php echo __('Local network')?></h2>
         				<ul class="list">
-							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
-							  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+							  <li><?php echo __('o Оффис, албан газар, байгууллагын дотоод сүлжээ')?></li>
+							  <li><?php echo __('o Айл өрх, орон сууцны дотоод сүлжээ')?></li>
         				</ul>
             </div>
             <?php echo image_tag('home-lan1.png', array('style'=>'float:right;width:150px;margin:-25px 0 0 0;'));?>
     		</a>
     </div>
     <div style="margin-right:0px;" class="home-box">
-    		<a href="#">
+    		<a href="#tabs-3">
     		    <div class="left" style="width:150px;margin:5px 0 0 10px;">
-		            <h2><?php echo __('Sound system')?></h2>
+		            <h2 style="margin:0;"><?php echo __('Sound system')?></h2>
 		            <ul class="list">
-          				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
-          				  <li><a href=""><?php echo __('Албан газар байгууллага')?></a></li>
+          				  <li><?php echo __('o Хурал лекц, сургалтын өрөөний чанга яригч, микрофон болон өсгөгч')?></li>
+          				  <li><?php echo __('o Гадаах зарлалын чанга яригч цагаан хоолой')?></li>
 					      </ul>
     		    </div>
 	   	   		<?php echo image_tag('home-sound3.png', array('style'=>'float:right;width:130px;'));?>

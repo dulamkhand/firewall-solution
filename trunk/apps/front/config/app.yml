@@ -3,8 +3,8 @@
 
 # default values
 all:
-  #host: http://localhost:88/firewall/web/
-  host: http://firewall/
+  host: http://localhost:88/firewall/web/
+  #host: http://firewall/
   meta_title: firewall solution
   meta_description: firewall solution
   meta_keywords: firewall solution
@@ -12,8 +12,8 @@ all:
 
   phone: (+976) 99026025,&nbsp; (+976) 99258807
   email: firewallsolution.llc@gmail.com
-  address: Баянзүрх дүүрэг, 14-р хороо, Jobi 72 төв. Жуковын талбайгаас баруун тийш 200 метр.
-  address_en: Bayanzurkh district
+  address: Баянзүрх дүүрэг, 14-р хороо. Жуковын талбайгаас урд зүгт 100 метр.
+  address_en: Bayanzurkh district, 14th khoroo. 100 meter south from Jukov square.
   order_email: firewallsolution.llc@gmail.com
   facebook: FirewallSolution
   twitter: FirewallSolution
