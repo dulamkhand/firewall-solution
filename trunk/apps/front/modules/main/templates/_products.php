@@ -64,23 +64,6 @@
             - 8ш камер NHD-806
         </div>
     </div>
-    <div class="product-box">
-        <?php echo image_tag('/u/products/kit/68.gif', array('style'=>'max-width:220px;max-height:220px'))?>
-        <div class="trans">
-            - 16 сувгийн DVR-4000<br>
-            - 16ш камер PRO-640
-        </div>
-    </div>
-    <div class="product-box">
-        <?php echo image_tag('/u/products/kit/69.gif', array('style'=>'max-width:220px;max-height:220px'))?>
-        <div class="trans">
-            - 24 сувгийн DVR 960H<br>
-            - 14ш өдөр/шөнийн камер                
-        </div>
-    </div>
-	  <div class="product-box">
-		    <div class="trans">Your idea?</div>
-    </div>
     <br clear="all">
 </div><!--tabs-1-->
   

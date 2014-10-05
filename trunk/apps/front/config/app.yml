@@ -5,6 +5,7 @@
 all:
   host: http://localhost:88/firewall/web/
   #host: http://firewall/
+  #host: http://www.urin-essence.com/girasole/firewall/web/
   meta_title: firewall solution
   meta_description: firewall solution
   meta_keywords: firewall solution
@@ -12,14 +13,14 @@ all:
 
   phone: (+976) 99026025,&nbsp; (+976) 99258807
   email: firewallsolution.llc@gmail.com
-  address: Баянзүрх дүүрэг, 14-р хороо. Жуковын талбайгаас урд зүгт 100 метр.
-  address_en: Bayanzurkh district, 14th khoroo. 100 meter south from Jukov square.
+  address: Баянзүрх дүүрэг, 14-р хороо. Жуковын талбайгаас урд зүгт 100 метр. Улаанбаатар хот, Монгол улс.
+  address_en: Bayanzurkh district, 14th khoroo. 100 meter south from Jukov square. Ulaanbaatar, Mongolia.
   order_email: firewallsolution.llc@gmail.com
   facebook: FirewallSolution
   twitter: FirewallSolution
   youtube: channel/UClyKDuRYYdBjzdZxEiKfLag
   skype: FirewallSolution
   yahoo: FirewallSolution
-  lat: 47.9029
-  lng: 107.029
+  lat: 47.916587
+  lng: 106.951904
   invoice_email: firewallsolution.llc@gmail.com

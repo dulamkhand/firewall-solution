@@ -1,4 +1,4 @@
-﻿<a name="home"></a>
+<a name="home" style="margin:0 0 10px 0;clear:both;display:block;"></a>
 <div id="header">
 <div class="wrapper">
     <div id="menu">
@@ -10,7 +10,7 @@
                </a>
             </li>
             <li class="<?php if($action == 'about') echo 'current'?>">
-               <a href="#about"><?php echo __('Firewall Solution LLC')?></a>
+               <a href="#about" style="padding-left:10px"><?php echo __('Firewall Solution LLC')?></a>
             </li>
             <li class="<?php if(in_array($action, array('products', 'productShow'))) echo 'current'?>">
                <a href="#products"><?php echo __('Products and services')?></a>
@@ -22,7 +22,14 @@
                <a href="#clients"><?php echo __('Our clients')?></a>
             </li>
             <li class="<?php if($action == 'contact') echo 'current'?>">
-               <a href="#contact" style="border:0;"><?php echo __('Contact')?></a>
+               <a href="#contact"><?php echo __('Contact')?></a>
+            </li>
+            <li class="<?php if($action == 'contact') echo 'current'?>">
+                <?php if($sf_user->getCulture() == "en"):?>
+                    <a href="<?php echo url_for('main/culture?l=mn')?>" style="border:0;"><?php echo __('Монгол')?></a>
+                <?php else:?>
+                    <a href="<?php echo url_for('main/culture?l=en')?>" style="border:0;"><?php echo __('English')?></a>
+                <?php endif?>
             </li>
             <br clear="all">
         </ul>

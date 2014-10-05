@@ -55,13 +55,11 @@
 .image_thumb {
 	float: left;
 	width: 299px;
-	height: 472px;
+	height: 455px;
 	background: #efefef;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #dedede;
-	overflow: scroll;
 	overflow-y: scroll;
-	y-overflow: scroll;
 }
 .image_thumb img {
 	border: 1px solid #dedede; 
@@ -79,18 +77,18 @@
 	margin:-1px 0 0 0;
 	padding:10px 10px;
 	background:#efefef;
-	width:279px;
+	width:260px;
 	float:left;
 	border-bottom:1px solid #dedede;
 	border-top:1px solid #dedede;
 	border-right:1px solid #dedede;
 }
 .image_thumb ul li.hover {
-	background:#f26222;
+	background:#dedede;
 	cursor:pointer;
 }
 .image_thumb ul li.active {
-	background:#f26222;
+	background:#dedede;
 	cursor:default;
 }
 html .image_thumb ul li h3 {
@@ -101,7 +99,7 @@ html .image_thumb ul li h3 {
 	float: left; 
 	margin:10px 0 0 10px;
 	padding: 0;
-	width: 157px;
+	width:138px;
 }	
 .image_thumb ul li p{display: none;}
 .image_thumb ul li .block span {
